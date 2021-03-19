@@ -1,0 +1,33 @@
+/* Font */
+@font-face {
+    font-family: 'ralewaythin_italic';
+    src: url('font/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Body */
+header {
+    color: red;
+    font-family: 'ralewaythin';
+    font-weight: bold;
+    font-size: 48px;
+}
+section {
+    color: blue;
+    font-family: 'ralewaythin';
+    font-weight: italic;
+    font-size: 80px;
+}
