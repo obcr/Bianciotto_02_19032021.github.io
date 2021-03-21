@@ -20,11 +20,19 @@
 
 /* Body */
 header {
-    color: red;
     font-family: 'ralewaythin';
-    font-weight: bold;
-    font-size: 48px;
+    font-weight: bolder;
+    font-size: 12px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+a.nounderline:link { 
+    text-decoration:none; 
+}
+  
 section {
     color: blue;
     font-family: 'ralewaythin';
