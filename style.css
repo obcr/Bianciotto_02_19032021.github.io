@@ -16,26 +16,139 @@
     font-style: normal;
 
 }
+/*------------------------------------------------------------------------------*/
 
+/* Font Awesome CSS*/
+
+
+.fa-heart {
+    font-size: 17px;
+}
+
+
+.fa-map-marker-alt {
+    color: black;
+    font-size: 12px;
+
+}
+
+.fa-star {
+    color: #0065FC;
+
+   }
+
+.fa-info {
+    color: #0065FC;
+    font-size: 8px;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+
+   }
+
+   
+/*------------------------------------------------------------------------------*/
 
 /* Body */
+
+#bloc_page {
+    width: 1440px;
+    margin: auto;
+
+}
+h3 {
+    font-family: 'raleway'; 
+}
+
+.filtres {
+    font-family: 'raleway';
+}
+p {
+    font-family: 'raleway';
+}
+
 header {
-    font-family: 'ralewaythin';
-    font-weight: bolder;
-    font-size: 12px;
+    font-family: 'raleway';
+    font-size: 14px;
+
 }
 
 ul {
     list-style-type: none;
+
 }
 
 a.nounderline:link { 
     text-decoration:none; 
+
 }
+
+/* Section herbergement_marseille */
+
+#herbergement_marseille {
+    font-family: 'raleway';
+
+}
+/* Searchbar */
+
+#searchbar{
+    position:relative;
+    width:420px;
+    height:51px;
+    display:inline-block;
+}
+#searchbar .picto{
+    width: 52px;
+    height: 51px;
+    float:left;    
   
-section {
-    color: blue;
-    font-family: 'ralewaythin';
-    font-weight: italic;
-    font-size: 80px;
 }
+#searchbar .text{
+    width: 234px;
+    float:left;    
+  
+}
+#searchbar .champ{
+    width:234px;
+    height:auto;
+    float:left;
+}
+#searchbar .bouton{
+    width: 134px;
+    height: 51px;
+    padding: 0;
+    background-color: #0065FC;
+    float:left;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/* Section plus_populaires */
+
+#plus_populaires {
+    font-family: 'raleway';
+
+}
+
+/*------------------------------------------------------------------------------*/
+
+/* Section activite_marseille */
+
+#activite_marseille {
+    font-family: 'raleway';
+
+}
+
+/*------------------------------------------------------------------------------*/
+
+/* Footer */
+
+footer {
+    font-family: 'raleway';
+    font-size: 14px;
+    background-color :#F2F2F2
+
+}
+
+/*------------------------------------------------------------------------------*/
