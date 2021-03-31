@@ -1,154 +1,701 @@
 /* Font */
-@font-face {
+
+@font-face
+{
     font-family: 'ralewaythin_italic';
     src: url('font/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
          url('font/raleway-italic-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-@font-face {
+@font-face
+{
     font-family: 'ralewaythin';
     src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
          url('font/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-/*------------------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------------------*/
 /* Font Awesome CSS*/
 
-
-.fa-heart {
+.fa-heart
+{
     font-size: 17px;
 }
 
 
-.fa-map-marker-alt {
+.fa-map-marker-alt
+{
     color: black;
     font-size: 12px;
-
 }
 
-.fa-star {
+.fa-star
+{
     color: #0065FC;
+}
 
-   }
-
-.fa-info {
+.fa-info
+{
     color: #0065FC;
     font-size: 8px;
     display: inline-block;
     border-radius: 60px;
     box-shadow: 0px 0px 2px #888;
     padding: 0.5em 0.6em;
+}
 
-   }
-
-   
 /*------------------------------------------------------------------------------*/
-
 /* Body */
 
-#bloc_page {
+#bloc_page
+{
     width: 1440px;
     margin: auto;
-
 }
-h3 {
+
+h3
+{
     font-family: 'raleway'; 
 }
 
-.filtres {
-    font-family: 'raleway';
-}
-p {
+.filtres
+{
     font-family: 'raleway';
 }
 
-header {
+p
+{
     font-family: 'raleway';
-    font-size: 14px;
-
 }
 
-ul {
+/*------------------------------------------------------------------------------*/
+/* Header Menu */
+
+header
+{
+   width: 100%;
+}
+#navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+ul
+{
+    display: flex;
+}
+#navbar nav ul li
+{
     list-style-type: none;
-
+    padding: 20px;
 }
-
-a.nounderline:link { 
-    text-decoration:none; 
-
+li a
+{
+    text-decoration: none;
+    color: black;
 }
-
-/* Section herbergement_marseille */
-
-#herbergement_marseille {
+#menu
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#menu li
+{
     font-family: 'raleway';
+}
+.inscrire
+{
+    font-family: 'raleway';
+    font-weight: bold;
+    padding-top: 2.3px;
+}
+.inscrire a
+{
+color: #0065FC;
+}
+li a:hover
+{
+    color: #0065FC;
+}
+li {
+    border-top: 3px solid #fff;
+}
+li:hover
+{
+    border-top: 3px solid #0065FC;
+}
+li:focus
+{
+    border-top: 3px solid #0065FC;
+}
+.sign-in
+{
+    display: flex;
+    align-items: center;
+}
+.sign-in a
+{
+    color: #0065FC;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+.sign-in a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+.main-container
+{
+    max-width: 100%;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Barre de recherche */
+
+.fa-map-marker-alt {
+    padding-top: 16px;
+    padding-left: 20px;
+    font-size: 1em;
+    color: black;
 
 }
-/* Searchbar */
-
-#searchbar{
-    position:relative;
-    width:420px;
-    height:51px;
-    display:inline-block;
-}
-#searchbar .picto{
-    width: 52px;
-    height: 51px;
-    float:left;    
-  
-}
-#searchbar .text{
+ .champ1 { 
     width: 234px;
-    float:left;    
-  
+    height: 44px;
+    border: none;
+    font-size: 1rem;
+    padding-left: 20px;
 }
-#searchbar .champ{
-    width:234px;
-    height:auto;
-    float:left;
-}
-#searchbar .bouton{
+
+ .styled {
     width: 134px;
-    height: 51px;
-    padding: 0;
+    height: 50px;
+    border: 0;
+    line-height: 2.5;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
     background-color: #0065FC;
+    border-radius: 0px 12px 12px 0px;  
+}
+
+ #searchbar
+{
+   display: flex;
+   border: none;
+
+}
+
+.element1:nth-child(1)
+{
+   width: 52px;
+   height: 50px;
+   background-color: #F2F2F2;
+   border-radius: 12px 0px 0px 12px;
+
+}
+.element2:nth-child(2)
+{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    color: #F2F2F2;
+
+}
+
+/*------------------------------------------------------------------------------*/
+/* Les Filtres */
+.filtre p {
+    font-family: 'raleway';
+    font-style: bold;
+}
+
+#information
+{
+    padding-top: 10px;
+}
+#sectionfiltre
+{
+	width: 940px;
+	display: flex;
+	justify-content: space-between;
+    padding-top: 30px;
+}
+
+a {
+	color: black;
+}
+
+.nounderline {
+	text-decoration: none;
+}
+
+#moncercle{
+	float:left;
+	background:#DEEBFF;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+  
+.fa-money-bill-wave{
+	color: #0065FC;
+	padding-left: 14px;
+	padding-top: 15px
+}
+.fa-child{
+	color: #0065FC;
+	padding-left: 18px;
+	padding-top: 15px
+} 
+.fa-dog{
+	color: #0065FC;
+	padding-left: 15px;
+	padding-top: 15px
+}
+.fa-heart{
+	color: #0065FC;
+	padding-left: 16px;
+	padding-top: 15px
+}
+
+.fil2 {
+    font-family: 'raleway';
+}
+.eco {
+	width: 194px;
+    height: 50px;
+	padding-top:  15px;
+	text-align: center;
+	margin: auto;
+}
+.fam {
+	width: 151px;
+    height: 50px;
+	padding-top:  15px;
+	text-align: center;
+	margin: auto;
+}
+.rom {
+	width: 183px;
+    height: 50px;
+	padding-top:  15px;
+	text-align: center;
+    font-style: bold;
+	margin: auto;
+}
+.ani {
+	width: 242px;
+    height: 50px;
+	padding-top:  15px;
+	text-align: center;
+	margin: auto;
+}
+
+.filtre:nth-child(1)
+{
+    width: 77px;
+    height: 50px;
+    background-color: #888;
+}
+
+.filtre:nth-child(2)
+{
+	width: 194px;
+    height: 50px;
+	border: #F2F2F2 solid 2px;
+	border-radius: 50px;
+}
+.filtre:nth-child(3)
+{
+	width: 151px;
+    height: 50px;
+	border: #F2F2F2 solid 2px;
+	border-radius: 50px;
+}
+.filtre:nth-child(4)
+{
+	width: 183px;
+    height: 50px;
+	border: #F2F2F2 solid 2px;
+	border-radius: 50px;
+}
+.filtre:nth-child(5)
+{
+	width: 242px;
+    height: 50px;
+	border: #F2F2F2 solid 2px;
+	border-radius: 50px;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Information */
+
+#information
+{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contour{
     float:left;
+    border-radius:50%;
+    width:23px;
+    height:23px;
+    border:2px solid #F2F2F2;
+}
+  
+.fa-info{
+    color: #0065FC;
+    padding-left: 8px;
+    padding-top: 3px
 }
 
-/*------------------------------------------------------------------------------*/
-
-/* Section plus_populaires */
-
-#plus_populaires {
+.inf {
+    width: 445px;
+    height: 23px;
+    padding-top:  5px;
+    text-align: center;
     font-family: 'raleway';
-
+    font-size: 15px;
+    margin: auto;
+}
+.info:nth-child(1)
+{
+    width: 445px;
+    height: 23px;
 }
 
 /*------------------------------------------------------------------------------*/
+/* Section herbergement marseille */
 
-/* Section activite_marseille */
-
-#activite_marseille {
+#herbergement_marseille
+{
     font-family: 'raleway';
+}
+*
+{
+    box-sizing: border-box;
+}
 
+/* ROOMS */
+
+#container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+}
+#rooms
+{
+    background: #F2F2F2;
+    border-radius: 25px;
+    width: 60em;
+}
+#main-rooms
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.rooms
+{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.rooms p, .rooms h4
+{
+    margin: 5px;
+}
+.rooms img
+{
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   object-fit: cover;
+   width: 100%;
+   height: 8em;
+}
+.rooms-title
+{
+    padding: 20px 0px 20px 20px;
+    margin-left: 7px;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 1em;
+}
+.rooms a
+{
+    text-decoration: none;
+    color: black;
+}
+.fa-star
+{
+    color: #0065FC;
+    font-size: small;
+    padding-left: 5px;
+}
+.fa-star.grey
+{
+    color: #F2F2F2;
+    font-size: small;
+}     
+.rooms figure
+{
+    margin: 0;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaaaaa38;
+    width: 17.5em;
+    height: 14em;
+}
+.rooms h4
+{
+    font-family: 'raleway';
+}
+.rooms figcaption p
+{
+    font-size: 14px;
+}
+.rooms figcaption
+{
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.more a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.more
+{
+  padding: 20px;
+  margin-left: 7px;
+  font-family: raleway;
 }
 
 /*------------------------------------------------------------------------------*/
+/* Section les plus populaires */
 
+#plus_populaires
+{
+    font-family: 'raleway';
+}
+
+/* Aside */
+
+.aside img
+{
+    width: 8em;
+    height: 8em;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    object-fit: cover;
+    
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 25px;
+    float: right;
+    width: 25em;
+    height: auto;
+   
+}
+.aside
+{
+    padding-bottom: 30px;
+}
+.aside-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+    padding: 20px;
+    font-size: 1em;
+    margin-left: 5px;
+}
+.aside p
+{
+     margin-top: 24px;
+}
+.aside h4
+{
+    font-family: 'raleway';
+}
+.aside figure
+{
+    display: flex;
+    background: #ffffff;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaaaaa38;
+    margin: 10px 20px;
+}
+#aside
+{
+    display: flex;
+    flex-direction: column;
+}
+#aside a
+{
+    text-decoration: none;
+    color: black;
+}
+.aside figcaption
+{
+    padding-left: 17px;
+}
+.aside figcaption h4
+{
+    margin: 5px 0;
+}
+.aside figcaption p
+{
+    margin-top: 5px;
+}
+.aside span
+{
+    margin-top: 30px;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Section activite marseille */
+
+#activite_marseille
+{
+    font-family: 'raleway';
+}
+
+#activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#main-visit
+{
+display: -o-flexblox;
+display: -ms-flexbox;
+display: flex;
+justify-content: center;
+}
+#main-visit img
+{
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+object-fit: cover;
+width: 300px;
+margin: auto;
+}
+.vieuxp img, .calanques img
+{
+height: 450px;
+}
+.pomegues img, .dame img, .longchamp img
+{
+height: 200px;
+}
+.frioul img, .longchamp img
+{
+height: 170px;
+align-content: center;
+}
+#main-visit a 
+{
+text-decoration: none;
+color: black;
+font-size: small;
+}
+.vieuxp figure, .calanques figure, .pomegues figure, .frioul figure, .dame figure, .longchamp figure
+{
+box-shadow: 8px 8px 12px #aaaaaa38;
+border: 1px solid transparent;
+border-radius: 25px;
+box-sizing: border-box;
+}
+.pomegues, .dame
+{
+padding-bottom: 2px;
+}
+.vieuxp h3, .calanques h3, .pomegues h3, .frioul h3, .dame h3, .longchamp h3
+{
+padding-left: 10px;
+}
+.activities
+{
+padding-left: 50px;
+}
+
+
+/*------------------------------------------------------------------------------*/
 /* Footer */
 
-footer {
+#footer
+{
+    background: #F2F2F2;
+    margin-top: 40px;
+    display: -o-flexblox;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+ }
+.bloc_footer
+{
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+    margin: auto;
+}
+.footer
+{
+    display: -o-flexblox;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    padding:30px 30px 30px 0px;
+    width: 50%;
+}
+.footer a
+{
+    text-decoration: none;
     font-family: 'raleway';
-    font-size: 14px;
-    background-color :#F2F2F2
-
+    color: black;
+}
+.footer a:visited
+{
+    text-decoration: none;
+    font-family: 'raleway';
+    color: black;
+}
+.footer h4
+{
+    font-family: 'raleway';
+    font-weight: bold;
 }
 
 /*------------------------------------------------------------------------------*/
