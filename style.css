@@ -243,6 +243,11 @@ li:focus
 
 /* Les Filtres */
 
+.filtre:active {
+    background-color: #0065FC;
+    border-color: #DEEBFF;
+}
+
 #information
 {
     padding-top: 20px;
@@ -496,6 +501,11 @@ li:focus
 }
 
 /* Aside */
+
+figcaption
+{
+    align-content: stretch;
+}
 
 .aside img
 {
