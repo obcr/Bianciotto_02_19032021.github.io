@@ -27,12 +27,6 @@
 /*------------------------------------------------------------------------------*/
 /* Font Awesome CSS*/
 
-.fa-heart
-{
-    font-size: 17px;
-}
-
-
 .fa-map-marker-alt
 {
     color: black;
@@ -44,14 +38,32 @@
     color: #0065FC;
 }
 
+.fa-money-bill-wave
+{
+    margin: auto;
+    color: #0065FC;
+}
+.fa-child
+{
+    margin: auto;
+    color: #0065FC;
+}
+.fa-dog
+{
+    margin: auto;
+    color: #0065FC;
+}
+.fa-heart
+{
+    margin: auto;
+    color: #0065FC;
+}
+
 .fa-info
 {
+    margin: auto;
     color: #0065FC;
-    font-size: 8px;
-    display: inline-block;
-    border-radius: 60px;
-    box-shadow: 0px 0px 2px #888;
-    padding: 0.5em 0.6em;
+    font-size: small;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -207,6 +219,7 @@ li:focus
 {
    display: flex;
    border: none;
+   padding-top: 20px;
 
 }
 
@@ -227,133 +240,98 @@ li:focus
 }
 
 /*------------------------------------------------------------------------------*/
+
 /* Les Filtres */
-
-.fil1, h5
-{
-    font-family: 'raleway';
-    font-weight: bold;
-    font-size: 17px;
-}
-
 
 #information
 {
-    padding-top: 10px;
+    padding-top: 20px;
 }
+
 #sectionfiltre
 {
 	width: 940px;
 	display: flex;
+    align-items: center;
 	justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
-a {
-	color: black;
-}
-
-.nounderline {
+.nounderline
+{
 	text-decoration: none;
+    color: black;
 }
 
-#moncercle{
-	float:left;
-	background:#DEEBFF;
-	border-radius:50%;
+#moncercle
+{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    background:#DEEBFF;
+	border-radius:100%;
 	width:50px;
 	height:50px;
-    margin-top: -1px;
-    margin-left: -1px;
-}
-  
-.fa-money-bill-wave{
-	color: #0065FC;
-	padding-left: 14px;
-	padding-top: 15px
-}
-.fa-child{
-	color: #0065FC;
-	padding-left: 18px;
-	padding-top: 15px
 } 
-.fa-dog{
-	color: #0065FC;
-	padding-left: 15px;
-	padding-top: 15px
-}
-.fa-heart{
-	color: #0065FC;
-	padding-left: 16px;
-	padding-top: 15px
+
+.filtre h4
+{
+ padding-left: 2px;
+ padding-right: 25px;
 }
 
-.eco {
-	width: 194px;
+.filtre
+{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-right: 25px;
+    width: 100%;
     height: 50px;
-	padding-top:  15px;
-	text-align: center;
-	margin: auto;
+    border: #F2F2F2 solid 2px;
+    border-left: none;
+    border-radius: 50px;
+    font-family: 'raleway';
+    font-weight: bold;
+    cursor: pointer;
 }
-.fam {
-	width: 151px;
-    height: 50px;
-	padding-top:  15px;
-	text-align: center;
-	margin: auto;
-}
-.rom {
-	width: 183px;
-    height: 50px;
-	padding-top:  15px;
-	text-align: center;
-    font-style: bold;
-	margin: auto;
-}
-.ani {
-	width: 242px;
-    height: 50px;
-	padding-top:  15px;
-	text-align: center;
-	margin: auto;
+
+.filtre, p
+{
+    margin: auto;
 }
 
 .filtre:nth-child(1)
 {
-    width: 77px;
-    height: 50px;
+    flex: 0.64;
+    border: none;
+    border-radius: none;
+    cursor: not-allowed;
+    margin-right: 14px;
 }
 
 .filtre:nth-child(2)
 {
-	width: 194px;
-    height: 50px;
-	border: #F2F2F2 solid 2px;
-	border-radius: 50px;
+    flex: 1.92;
+    margin-right: 24px;
 }
 .filtre:nth-child(3)
 {
-	width: 151px;
-    height: 50px;
-	border: #F2F2F2 solid 2px;
-	border-radius: 50px;
+    flex: 1.49;
+    margin-right: 24px;
 }
 .filtre:nth-child(4)
 {
-	width: 183px;
-    height: 50px;
-	border: #F2F2F2 solid 2px;
-	border-radius: 50px;
+    flex: 1.81;
+    margin-right: 24px;
 }
 .filtre:nth-child(5)
 {
-	width: 242px;
-    height: 50px;
-	border: #F2F2F2 solid 2px;
-	border-radius: 50px;
+    flex: 2.39;
 }
 
 /*------------------------------------------------------------------------------*/
+
 /* Information */
 
 #information
@@ -365,7 +343,8 @@ a {
 
 #contour{
     float:left;
-    border-radius:50%;
+    display: flex;
+    border-radius:100%;
     width:23px;
     height:23px;
     border:2px solid #F2F2F2;
@@ -373,14 +352,14 @@ a {
   
 .fa-info{
     color: #0065FC;
-    padding-left: 8px;
-    padding-top: 3px
+    align-items: center;
+    vertical-align: middle;
 }
 
 .inf {
     width: 445px;
     height: 23px;
-    padding-top:  5px;
+    padding-top:  3px;
     text-align: center;
     font-family: 'raleway';
     font-size: 15px;
