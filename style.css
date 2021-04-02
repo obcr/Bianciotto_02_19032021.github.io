@@ -502,9 +502,34 @@ li:focus
 
 /* Aside */
 
-figcaption
+.fa-chart-line
 {
-    align-content: stretch;
+    font-size: x-large;
+}
+
+.aside
+{
+    padding-bottom: 30px;
+}
+
+.aside p, .aside h4
+{
+margin: 5px;
+}
+
+.aside p
+{
+    margin-bottom: 25px;
+}
+
+.pop
+{
+    height: 136px;
+}
+
+.pop p
+{
+    margin-bottom: 35px; 
 }
 
 .aside img
@@ -516,9 +541,22 @@ figcaption
     object-fit: cover;
     
 }
-.aside
+
+.aside figcaption
 {
-    padding-bottom: 30px;
+    width: 170px;
+    padding-left: 20px;
+}
+
+.aside figcaption span
+{
+    align-content: start;
+}
+
+#aside a
+{
+    text-decoration: none;
+    color: black;
 }
 
 aside
@@ -542,11 +580,7 @@ aside
     font-size: 1em;
     margin-left: 5px;
 }
-.aside p
-{
-     margin-top: 24px;
-}
-.aside h4
+.aside, h4, h3
 {
     font-family: 'raleway';
 }
@@ -559,31 +593,10 @@ aside
     box-shadow: 4px 4px 6px #aaaaaa38;
     margin: 10px 20px;
 }
-#aside
-{
-    display: flex;
-    flex-direction: column;
-}
-#aside a
-{
-    text-decoration: none;
-    color: black;
-}
-.aside figcaption
-{
-    padding-left: 17px;
-}
-.aside figcaption h4
-{
-    margin: 5px 0;
-}
+
 .aside figcaption p
 {
-    margin-top: 5px;
-}
-.aside span
-{
-    margin-top: 30px;
+    font-size: 14px;
 }
 
 /*------------------------------------------------------------------------------*/
