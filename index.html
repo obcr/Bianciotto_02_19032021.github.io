@@ -39,29 +39,24 @@
 
 <!-- Section 1 -->
 
-<main class="main-container">
+
 
         <section id="trouver_herbergement"></section>
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou en pleine nature</p>
 
-                <div id="searchbar">
-
-                    <div class="element1"><i class="fas fa-map-marker-alt"></i></div>
-
-                    <div class="element2">
-                    <form method="post" action="traitement.php">
-                        <input class="champ1" type="text" value="Marseille, France"/>
-                    </form>
+                <div id="search">
+                    <div id="search-bar">
+                        <span class="search-bar"><i class="fas fa-map-marker-alt"></i></span>
+                        <form method="get" action="search">
+                            <input type="search" placeholder="" value="Marseille, France">
+                        </form>
+                        <span class="button"> <button class="search-button" type="button"> Rechercher </button></span>
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </div>
                     </div>
 
-                    <div class="element2">
-                        <button class="styled" type="submit">
-                            <a href="#"class="bouton nounderline"><font color="white">Rechercher</font></a>
-                        </button>
-                    </div>
-        
-                </div> 
+<!------------------------------->
 
                 <div id="sectionfiltre">
                     
@@ -309,7 +304,7 @@
     </div>
     </div>
 </section>
-</main>
+
 </div>
 <!---------------------------------------------------------------------------------------------------------->
 
