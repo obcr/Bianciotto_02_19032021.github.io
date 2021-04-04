@@ -700,12 +700,13 @@ padding-left: 50px;
 
 /* Media Queries */
 
-@media all and (max-device-width: 375px)
+@media all and (min-device-width: 375px) and (max-device-width: 900px)
 {
     #bloc_page
     {
-        width: 334px;
-        margin: auto;
+        width: 375px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 /*----------------------------------------------------------- Header -----------*/
     header
@@ -752,7 +753,7 @@ padding-left: 50px;
     {
         display: flex;
         flex-flow: row wrap;
-        margin: auto;
+        flex-direction: column;
     }
 
 /*----------------------------------------------------------- Heberg -----------*/
