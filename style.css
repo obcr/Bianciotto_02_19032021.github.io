@@ -598,8 +598,6 @@ aside
 }
 #main-visit
 {
-display: -o-flexblox;
-display: -ms-flexbox;
 display: flex;
 justify-content: center;
 }
@@ -657,8 +655,6 @@ padding-left: 50px;
 {
     background: #F2F2F2;
     margin-top: 40px;
-    display: -o-flexblox;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
  }
@@ -671,8 +667,6 @@ padding-left: 50px;
 }
 .footer
 {
-    display: -o-flexblox;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     padding:30px 30px 30px 0px;
@@ -700,31 +694,23 @@ padding-left: 50px;
 
 /* Media Queries */
 
-@media all and (min-device-width: 375px) and (max-device-width: 900px)
+@media all and (min-device-width: 0px) and (max-device-width: 900px)
 {
     #bloc_page
     {
         width: 375px;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin: auto;
     }
 /*----------------------------------------------------------- Header -----------*/
-    header
-    {
-        display: flex;
-        width: auto;
-    }  
 
     .logo
     {
-        display: flex;
+        justify-content: flex-start;
     }
 
      #menu, #navbar
     {
-        width: 333px;
         flex-direction: column;
-        margin: auto;
     }
 /*----------------------------------------------------------- Search -----------*/
     #search
@@ -749,12 +735,28 @@ padding-left: 50px;
         color: #ffffff;
     }
 /*----------------------------------------------------------- Filtre -----------*/
+
+
     #sectionfiltre
     {
-        display: flex;
+    display: flexbox;
+    width: auto;
+    flex-flow: row wrap;
+    }
+
+    .filtre
+    {
         flex-flow: row wrap;
         flex-direction: column;
+
+
     }
+
+    .filtre:nth-child(1)
+    {
+
+    }
+
 
 /*----------------------------------------------------------- Heberg -----------*/
 
@@ -857,18 +859,19 @@ padding-left: 50px;
 
     #footer
     {
-        display: flex;
+        background: #F2F2F2;
+        margin-top: 40px;
+        width: auto;
+    }
+
+    .bloc_footer
+    {
+        width: auto;
+        flex-wrap: wrap;
         flex-direction: column;
-        padding-bottom: 10px;
-        width: 100%;
+        justify-content: space-around;
+        padding-bottom: 20px;
     }
-    .footer
-    {
-        padding-left: 20px;
-    }
-    .footer a
-    {
-        padding: 5px;
-    }
+
 
 }
