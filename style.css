@@ -151,6 +151,11 @@
     src: local('Raleway Black Italic'), url('font/Raleway-BlackItalic.woff') format('woff');
     }
 
+
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family: 'Raleway-Regular';
+    }
 /* ------------------------------------------------------------------------------ */
 
 /* Font Awesome CSS*/
@@ -206,23 +211,23 @@
 
 h3
 {
-    font-family: 'Raleway'; 
+    font-family: 'Raleway-Regular'; 
 }
 
 .filtres
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 .filtre p
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     font-weight: bold;
 }
 
 p
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -271,12 +276,12 @@ li a
 
 #menu li
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 .inscrire
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     font-weight: bold;
     padding-top: 2.3px;
 }
@@ -413,7 +418,7 @@ input
     border: #F2F2F2 solid 2px;
     border-left: none;
     border-radius: 50px;
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     font-weight: bold;
     cursor: pointer;
 }
@@ -483,7 +488,7 @@ input
     height: 23px;
     padding-top:  3px;
     text-align: center;
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     font-size: 15px;
     margin: auto;
 }
@@ -499,7 +504,7 @@ input
 
 #herbergement_marseille
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 *
@@ -597,7 +602,7 @@ input
 
 .rooms h4
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 .rooms figcaption p
@@ -631,7 +636,7 @@ input
 
 #plus_populaires
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 /* Aside */
@@ -716,7 +721,7 @@ aside
 
 .aside, h4, h3
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 .aside figure
@@ -740,7 +745,7 @@ aside
 
 #activite_marseille
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
 }
 
 #activities {
@@ -841,20 +846,20 @@ padding-left: 50px;
 .footer a
 {
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     color: black;
 }
 
 .footer a:visited
 {
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     color: black;
 }
 
 .footer h4
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     font-weight: bold;
 }
 
