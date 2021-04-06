@@ -4,7 +4,151 @@
     font-family: 'Raleway Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Raleway Regular'), url('font/Raleway-Regular.woff') format('woff');
+    src: local('Raleway Regular'), url('Raleway-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway'), url('Raleway-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Italic'), url('Raleway-Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Thin'), url('Raleway-Thin.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Thin Italic'), url('Raleway-ThinItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraLight'), url('Raleway-ExtraLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraLight Italic'), url('Raleway-ExtraLightItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Light'), url('Raleway-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Light Italic'), url('Raleway-LightItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Medium'), url('Raleway-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Medium Italic'), url('Raleway-MediumItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway SemiBold'), url('Raleway-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway SemiBold Italic'), url('Raleway-SemiBoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Bold'), url('Raleway-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Bold Italic'), url('Raleway-BoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraBold'), url('Raleway-ExtraBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway ExtraBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraBold Italic'), url('Raleway-ExtraBoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Black'), url('Raleway-Black.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Raleway Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Black Italic'), url('Raleway-BlackItalic.woff') format('woff');
     }
 
 /* ------------------------------------------------------------------------------ */
@@ -62,23 +206,23 @@
 
 h3
 {
-    font-family: 'raleway'; 
+    font-family: 'Raleway'; 
 }
 
 .filtres
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 .filtre p
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
     font-weight: bold;
 }
 
 p
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -127,12 +271,12 @@ li a
 
 #menu li
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 .inscrire
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
     font-weight: bold;
     padding-top: 2.3px;
 }
@@ -269,7 +413,7 @@ input
     border: #F2F2F2 solid 2px;
     border-left: none;
     border-radius: 50px;
-    font-family: 'raleway';
+    font-family: 'Raleway';
     font-weight: bold;
     cursor: pointer;
 }
@@ -339,7 +483,7 @@ input
     height: 23px;
     padding-top:  3px;
     text-align: center;
-    font-family: 'raleway';
+    font-family: 'Raleway';
     font-size: 15px;
     margin: auto;
 }
@@ -355,7 +499,7 @@ input
 
 #herbergement_marseille
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 *
@@ -453,7 +597,7 @@ input
 
 .rooms h4
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 .rooms figcaption p
@@ -487,7 +631,7 @@ input
 
 #plus_populaires
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 /* Aside */
@@ -572,7 +716,7 @@ aside
 
 .aside, h4, h3
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 .aside figure
@@ -596,7 +740,7 @@ aside
 
 #activite_marseille
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
 }
 
 #activities {
@@ -697,20 +841,20 @@ padding-left: 50px;
 .footer a
 {
     text-decoration: none;
-    font-family: 'raleway';
+    font-family: 'Raleway';
     color: black;
 }
 
 .footer a:visited
 {
     text-decoration: none;
-    font-family: 'raleway';
+    font-family: 'Raleway';
     color: black;
 }
 
 .footer h4
 {
-    font-family: 'raleway';
+    font-family: 'Raleway';
     font-weight: bold;
 }
 
