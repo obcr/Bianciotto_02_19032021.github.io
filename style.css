@@ -203,6 +203,10 @@
 
 /* Body */
 
+*{
+	box-sizing: border-box;
+}
+
 #bloc_page
 {
     width: 1440px;
@@ -508,11 +512,6 @@ input
 #herbergement_marseille
 {
     font-family: 'Raleway-Regular';
-}
-
-*
-{
-    box-sizing: border-box;
 }
 
 /* ROOMS */
@@ -872,8 +871,13 @@ padding-left: 50px;
 
 /* Media Queries */
 
-@media all and (min-width: 335px) and (max-width: 500px)
+@media screen and (max-device-width: 768px)
 {
+
+    .container, .navbar, aside{
+		flex-direction: column;
+	}
+
     #bloc_page
     {
         width: auto;
@@ -964,13 +968,16 @@ padding-left: 50px;
        display: flex;
        padding-top: 40px;
     }
+    .inscrire
+    {
+            margin-right: 25px;
+    }
 
 /* ---------------------------------------------------------- Search ------------ */
    
     #search
     {
         width: auto;
-        padding-left: 15px;
         margin: 0;
     }
 
@@ -1070,6 +1077,8 @@ padding-left: 50px;
     #main-rooms
     {
         display: flex;
+        flex-flow: column;
+        width: 100%;
         background: none;
     }
 
