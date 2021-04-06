@@ -288,8 +288,8 @@ li a
 
 .inscrire a
 {
-color: #0065FC;
-padding-left: 12px;
+    color: #0065FC;
+    padding-left: 12px;
 }
 
 li a:hover
@@ -342,7 +342,10 @@ li:focus
 
 input
 {
-    border: 2px solid #F2F2F2;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
     width: 242px;
     height: 52px;
     padding-left: 9px;
@@ -370,17 +373,17 @@ input
     border-color: #DEEBFF;
 }
 
-#information
-{
-    padding-top: 20px;
-}
-
 #sectionfiltre
 {
-	width: 940px;
+	width: 65%;
 	display: flex;
     align-items: center;
 	justify-content: space-between;
+    padding-top: 20px;
+}
+
+#information
+{
     padding-top: 20px;
 }
 
@@ -403,8 +406,8 @@ input
 
 .filtre h4
 {
- padding-left: 2px;
- padding-right: 25px;
+    padding-left: 2px;
+    padding-right: 25px;
 }
 
 .filtre
@@ -748,7 +751,8 @@ aside
     font-family: 'Raleway-Regular';
 }
 
-#activities {
+#activities
+{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -841,6 +845,7 @@ padding-left: 50px;
     flex-direction: column;
     padding:30px 30px 30px 0px;
     width: 50%;
+    line-height: 2;
 }
 
 .footer a
@@ -867,7 +872,7 @@ padding-left: 50px;
 
 /* Media Queries */
 
-@media all and (min-width: 280px) and (max-width: 1024px)
+@media all and (min-width: 335px) and (max-width: 500px)
 {
     #bloc_page
     {
@@ -875,25 +880,96 @@ padding-left: 50px;
         margin: auto;
     }
 
+    body 
+    {
+        width: 100%;
+        padding-top: 15px;
+        overflow-x: hidden;
+    }
+
 /* ---------------------------------------------------------- Header ------------ */
+
+    header
+    {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    }  
 
     .logo
     {
-        justify-content: flex-start;
+    display: flex;
+    align-items: flex-end;
     }
-    #menu nav ul
+
+    h1
     {
-    padding: 0%;
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    padding-left: 15px;
     }
-    #navbar nav ul li
+
+    #menu, #navbar
     {
-        padding: 0%;
+    width: 100%;
+    }
+
+    #menu
+    {
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row wrap;
+    }
+
+    nav ul
+    {
+    padding: 0;
+    border-bottom: 2px solid #F2F2F2;
+    width: 100%;
+    }
+
+    nav
+    {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    }
+
+    li
+    {
+    text-align: center;
+    flex-basis: 50%;
+    }
+
+    li:hover
+    {
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
+    }
+
+    li:focus
+    {
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
+    }
+
+    .inscrire
+    {
+       order: -2;
+       display: flex;
+       padding-top: 40px;
     }
 
 /* ---------------------------------------------------------- Search ------------ */
-
+   
     #search
     {
+        width: auto;
         padding-left: 15px;
         margin: 0;
     }
@@ -903,12 +979,24 @@ padding-left: 50px;
         display: none;
     }
 
+    input
+    {
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    min-width: 229px;
+    height: 52px;
+    padding-left: 9px;    
+    }
+
     .search
     {
+        float: right;
+        margin-left: -10px;
         background: #0065FC;
-        border: 12px solid #0065FC;
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
+        border: 18px solid #0065FC;
+        border-radius: 12px;
         display: flex;
     }
 
@@ -919,19 +1007,21 @@ padding-left: 50px;
 
 /* ---------------------------------------------------------- Filtre ------------ */
 
-    #sectionfiltre
+#sectionfiltre
     {
-    display: flexbox;
-    width: auto;
+	width: 65%;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     flex-flow: row wrap;
+    align-items: center;
+	justify-content: space-between;
+    padding-top: 20px;
     }
 
-    .filtre
+.filtre
     {
-        flex-flow: row wrap;
-        flex-direction: column;
-
-
+    margin: 7px;
     }
 
 /* ---------------------------------------------------------- Heberg ------------ */
@@ -1050,16 +1140,21 @@ padding-left: 50px;
     {
         background: #F2F2F2;
         margin-top: 40px;
+        padding-bottom: 40px;
         width: auto;
     }
 
     .bloc_footer
     {
-        width: auto;
-        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: space-around;
-        padding-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
-
+    .footer{
+        padding: 0%;
+        inline-size: auto;
+        line-height: 2;
+    }
 }
