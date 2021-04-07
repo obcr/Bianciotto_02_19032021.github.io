@@ -151,7 +151,11 @@
     src: local('Raleway Black Italic'), url('font/Raleway-BlackItalic.woff') format('woff');
     }
 
-
+    .font
+    {
+    font-family: 'Raleway-Regular';
+    }
+    
     p, h1, h2, h3, h4, h5, h6
     {
         font-family: 'Raleway-Regular';
@@ -1078,7 +1082,6 @@ padding-left: 50px;
     {
         display: flex;
         flex-flow: column;
-        width: 100%;
         background: none;
     }
 
@@ -1090,6 +1093,11 @@ padding-left: 50px;
     .rooms
     {
         padding: 10px;
+    }
+
+    .rooms figure
+    {
+        width: 100%;
     }
 
     .rooms img
@@ -1390,6 +1398,12 @@ padding-left: 50px;
     .rooms
     {
         padding: 10px;
+    }
+
+    .rooms figure
+    {
+        width: 100%;
+        margin: auto;
     }
 
     .rooms img
