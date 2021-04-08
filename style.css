@@ -1,166 +1,3 @@
-/* Font */
-
-@font-face {
-    font-family: 'Raleway Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Regular'), url('font/Raleway-Regular.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway'), url('font/Raleway-Regular.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Italic'), url('font/Raleway-Italic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Thin';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Thin'), url('font/Raleway-Thin.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Thin Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Thin Italic'), url('font/Raleway-ThinItalic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway ExtraLight';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway ExtraLight'), url('font/Raleway-ExtraLight.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway ExtraLight Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway ExtraLight Italic'), url('font/Raleway-ExtraLightItalic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Light'), url('font/Raleway-Light.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Light Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Light Italic'), url('font/Raleway-LightItalic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Medium'), url('font/Raleway-Medium.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Medium Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Medium Italic'), url('font/Raleway-MediumItalic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway SemiBold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway SemiBold'), url('font/Raleway-SemiBold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway SemiBold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway SemiBold Italic'), url('font/Raleway-SemiBoldItalic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Bold'), url('font/Raleway-Bold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Bold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Bold Italic'), url('font/Raleway-BoldItalic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway ExtraBold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway ExtraBold'), url('font/Raleway-ExtraBold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway ExtraBold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway ExtraBold Italic'), url('font/Raleway-ExtraBoldItalic.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Black';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Black'), url('font/aleway-Black.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Raleway Black Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Raleway Black Italic'), url('font/Raleway-BlackItalic.woff') format('woff');
-    }
-
-    .font
-    {
-    font-family: 'Raleway-Regular';
-    }
-    
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family: 'Raleway-Regular';
-    }
-/* ------------------------------------------------------------------------------ */
 
 /* Font Awesome CSS*/
 
@@ -211,31 +48,42 @@
 	box-sizing: border-box;
 }
 
+body, html{
+    padding: 0;
+    margin: 0 1rem;  
+    font-family: 'Raleway', sans-serif;
+}
+
 #bloc_page
 {
-    width: 1440px;
-    margin: auto;
+width: 1440px;
+display: flexbox;
+margin: auto;
 }
 
 h3
 {
-    font-family: 'Raleway-Regular'; 
+    font-family: 'Raleway', sans-serif;
+}
+
+#trouver_herbergement h3{
+    font-size: 1.4rem;
 }
 
 .filtres
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 .filtre p
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
 p
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -255,18 +103,19 @@ header
 .logo
 {
     display: flex;
-    align-items: flex-end;
+    margin-bottom: 11px;
 }
 
 ul
 {
     display: flex;
+    margin-top: 0px;
 }
 
 #navbar nav ul li
 {
     list-style-type: none;
-    padding: 20px;
+    padding: 35px;
 }
 
 li a
@@ -279,19 +128,18 @@ li a
 {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
 }
 
 #menu li
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 .inscrire
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    padding-top: 2.3px;
 }
 
 .inscrire a
@@ -429,7 +277,7 @@ input
     border: #F2F2F2 solid 2px;
     border-left: none;
     border-radius: 50px;
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     cursor: pointer;
 }
@@ -499,7 +347,7 @@ input
     height: 23px;
     padding-top:  3px;
     text-align: center;
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
     font-size: 15px;
     margin: auto;
 }
@@ -515,7 +363,7 @@ input
 
 #herbergement_marseille
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 /* ROOMS */
@@ -608,7 +456,7 @@ input
 
 .rooms h4
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 .rooms figcaption p
@@ -642,7 +490,7 @@ input
 
 #plus_populaires
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Aside */
@@ -727,7 +575,7 @@ aside
 
 .aside, h4, h3
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 .aside figure
@@ -751,20 +599,21 @@ aside
 
 #activite_marseille
 {
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
 }
 
 #activities
 {
-    display: flex;
+    width: auto;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: auto;
 }
 
 #main-visit
 {
 display: flex;
-justify-content: center;
+justify-content: space-between;
 }
 
 #main-visit img
@@ -786,6 +635,16 @@ height: 450px;
 height: 200px;
 }
 
+.pomegues
+{
+    margin-bottom: 1.7rem;
+}
+
+.dame
+{
+    margin-bottom: 1.7rem;
+}
+
 .frioul img, .longchamp img
 {
 height: 170px;
@@ -799,7 +658,7 @@ color: black;
 font-size: small;
 }
 
-.vieuxp figure, .calanques figure, .pomegues figure, .frioul figure, .dame figure, .longchamp figure
+.vieuxp, .calanques, .pomegues, .frioul, .dame, .longchamp
 {
 box-shadow: 8px 8px 12px #aaaaaa38;
 border: 1px solid transparent;
@@ -838,8 +697,8 @@ padding-left: 50px;
 {
     display: flex;
     justify-content: space-around;
-    width: 1440px;
-    margin: auto;
+    width: 100%;
+    margin-left: 7.5rem;
 }
 
 .footer
@@ -848,26 +707,27 @@ padding-left: 50px;
     flex-direction: column;
     padding:30px 30px 30px 0px;
     width: 50%;
-    line-height: 2;
 }
 
 .footer a
 {
     text-decoration: none;
-    font-family: 'Raleway-Regular';
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
     color: black;
 }
 
 .footer a:visited
 {
     text-decoration: none;
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway', sans-serif;
     color: black;
 }
 
 .footer h4
 {
-    font-family: 'Raleway-Regular';
+    margin-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
@@ -879,8 +739,8 @@ padding-left: 50px;
 {
 
     .container, .navbar, aside{
-		flex-direction: column;
-	}
+        flex-direction: column;
+    }
 
     #bloc_page
     {
@@ -1020,13 +880,13 @@ padding-left: 50px;
 
 #sectionfiltre
     {
-	width: 65%;
-	display: flex;
+    width: 65%;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     flex-flow: row wrap;
     align-items: center;
-	justify-content: space-between;
+    justify-content: space-between;
     padding-top: 20px;
     }
 
@@ -1183,8 +1043,8 @@ padding-left: 50px;
 {
 
     .container, .navbar, aside{
-		flex-direction: column;
-	}
+        flex-direction: column;
+    }
 
     #bloc_page
     {
@@ -1280,6 +1140,11 @@ padding-left: 50px;
     {
             margin-right: 25px;
     }
+#trouver_herbergement h4{
+    font-size: 1.7rem;
+}
+
+
 
 /* ---------------------------------------------------------- Search ------------ */
    
@@ -1324,13 +1189,13 @@ padding-left: 50px;
 
 #sectionfiltre
     {
-	width: 65%;
-	display: flex;
+    width: 65%;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     flex-flow: row wrap;
     align-items: center;
-	justify-content: space-between;
+    justify-content: space-between;
     padding-top: 20px;
     }
 
@@ -1352,7 +1217,7 @@ padding-left: 50px;
     aside
     {
         order: -1;
-        padding: 0;
+        padding-right: 12px;
         border-radius: 0;
         margin: 0;
         width: 100%;
@@ -1380,6 +1245,7 @@ padding-left: 50px;
         background: none;
         height: auto;
         width: 100%;
+        padding-right: 38px;
     }
 
     #main-rooms
@@ -1431,6 +1297,7 @@ padding-left: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-right: 22px;
     }
 
     .activities
@@ -1470,10 +1337,7 @@ padding-left: 50px;
     .bloc_footer
     {
         flex-direction: column;
-        margin-left: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-left: 2.5rem;
     }
     .footer{
         padding: 0%;
