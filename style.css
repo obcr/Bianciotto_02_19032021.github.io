@@ -49,16 +49,13 @@
 }
 
 body, html{
-    padding: 0;
-    margin: 0 1rem;  
     font-family: 'Raleway', sans-serif;
 }
 
 #bloc_page
 {
-width: 1440px;
-display: flexbox;
-margin: auto;
+width: auto;
+margin: 0 3.125rem;  
 }
 
 h3
@@ -68,6 +65,7 @@ h3
 
 #trouver_herbergement h3{
     font-size: 1.4rem;
+    padding-top: 0.6rem;
 }
 
 .filtres
@@ -93,6 +91,7 @@ p
 header
 {
    width: 100%;
+   height: 50px;
 }
 #navbar
 {
@@ -146,6 +145,8 @@ li a
 {
     color: #0065FC;
     padding-left: 12px;
+    padding-right: 25px;
+
 }
 
 li a:hover
@@ -173,7 +174,8 @@ li:focus
 
 #search
 {
-    padding-top: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 0.8rem;
 }
 
 #search-bar
@@ -220,6 +222,11 @@ input
     height: 52px;
 }
 
+
+#sectionfiltre, #information
+{
+    margin-left: 0.6 rem;
+}
 /* ------------------------------------------------------------------------------ */
 
 /* Les Filtres */
@@ -235,11 +242,6 @@ input
 	display: flex;
     align-items: center;
 	justify-content: space-between;
-    padding-top: 20px;
-}
-
-#information
-{
     padding-top: 20px;
 }
 
@@ -294,6 +296,7 @@ input
     border-radius: none;
     cursor: not-allowed;
     margin-right: 14px;
+    padding-left: 0.6rem;
 }
 
 .filtre:nth-child(2)
@@ -325,6 +328,10 @@ input
     width: 30%;
     display: flex;
     justify-content: space-between;
+    padding-left: 0.6rem;
+    padding-top: 32px;
+    padding-bottom: 20px;
+
 }
 
 #contour{
@@ -373,14 +380,13 @@ input
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 25px;
 }
 
 #rooms
 {
     background: #F2F2F2;
     border-radius: 25px;
-    width: 60em;
+    width: 65%;
 }
 
 #main-rooms
@@ -412,13 +418,13 @@ input
    border-top-right-radius: 25px;
    object-fit: cover;
    width: 100%;
-   height: 8em;
+   height: 113px;
 }
 
 .rooms-title
 {
     padding: 20px 0px 20px 20px;
-    margin-left: 7px;
+    margin-left: 12px;
     font-family: raleway;
     font-weight: bold;
     font-size: 1em;
@@ -450,8 +456,8 @@ input
     border: 2px solid #ffffff;
     border-radius: 25px;
     box-shadow: 4px 4px 6px #aaaaaa38;
-    width: 17.5em;
-    height: 14em;
+    width: 242px;
+    height: 204px;
 }
 
 .rooms h4
@@ -480,7 +486,7 @@ input
 .more
 {
   padding: 20px;
-  margin-left: 7px;
+  margin-left: 12px;
   font-family: raleway;
 }
 
@@ -558,7 +564,7 @@ aside
     background: #F2F2F2;
     border-radius: 25px;
     float: right;
-    width: 25em;
+    width: 32%;
     height: auto;
 }
 
@@ -698,7 +704,7 @@ padding-left: 50px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-left: 7.5rem;
+    margin-left: 3.5rem;
 }
 
 .footer
@@ -733,315 +739,9 @@ padding-left: 50px;
 
 /* ------------------------------------------------------------------------------ */
 
-/* Media Queries iPhone 8 */
 
-@media screen and (max-device-width: 375px)
+@media screen and (min-device-width: 220px) and (max-device-width: 425px)
 {
-
-    .container, .navbar, aside{
-        flex-direction: column;
-    }
-
-    #bloc_page
-    {
-        width: auto;
-        margin: auto;
-    }
-
-    body 
-    {
-        width: 100%;
-        padding-top: 15px;
-        overflow-x: hidden;
-    }
-
-/* ---------------------------------------------------------- Header ------------ */
-
-    header
-    {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    }  
-
-    .logo
-    {
-    display: flex;
-    align-items: flex-end;
-    }
-
-    h1
-    {
-    margin: 0;
-    width: 50%;
-    position: absolute;
-    padding-left: 15px;
-    }
-
-    #menu, #navbar
-    {
-    width: 100%;
-    }
-
-    #menu
-    {
-        display: flex;
-        justify-content: flex-end;
-        flex-flow: row wrap;
-    }
-
-    nav ul
-    {
-    padding: 0;
-    border-bottom: 2px solid #F2F2F2;
-    width: 100%;
-    }
-
-    nav
-    {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    }
-
-    li
-    {
-    text-align: center;
-    flex-basis: 50%;
-    }
-
-    li:hover
-    {
-    border-bottom: 3px solid #0065FC;
-    border-top: none;
-    }
-
-    li:focus
-    {
-    border-bottom: 3px solid #0065FC;
-    border-top: none;
-    }
-
-    .inscrire
-    {
-       order: -2;
-       display: flex;
-       padding-top: 40px;
-    }
-    .inscrire
-    {
-            margin-right: 25px;
-    }
-
-/* ---------------------------------------------------------- Search ------------ */
-   
-    #search
-    {
-        width: auto;
-        margin: 0;
-    }
-
-    .search-button
-    {
-        display: none;
-    }
-
-    input
-    {
-    border-top: 2px solid #F2F2F2;
-    border-bottom: 2px solid #F2F2F2;
-    border-left: none;
-    border-right: none;
-    min-width: 229px;
-    height: 52px;
-    padding-left: 9px;    
-    }
-
-    .search
-    {
-        float: right;
-        margin-left: -10px;
-        background: #0065FC;
-        border: 18px solid #0065FC;
-        border-radius: 12px;
-        display: flex;
-    }
-
-    .fa-search
-    {
-        color: #ffffff;
-    }
-
-/* ---------------------------------------------------------- Filtre ------------ */
-
-#sectionfiltre
-    {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    }
-
-.filtre
-    {
-    margin: 7px;
-    }
-
-/* ---------------------------------------------------------- Heberg ------------ */
-
-    #container
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0;
-    }
-
-    aside
-    {
-        order: -1;
-        padding: 0;
-        border-radius: 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    #aside
-    {
-        width: 100%;
-    }
-
-    .aside span
-    {
-        margin: 0;
-    }
-
-    .aside figure
-    {
-        width: auto;
-    }
-
-    #rooms
-    {
-        display: flex;
-        flex-direction: column;
-        background: none;
-        height: auto;
-        width: 100%;
-    }
-
-    #main-rooms
-    {
-        display: flex;
-        flex-flow: column;
-        background: none;
-    }
-
-    .rooms-title
-    {
-        margin-left: 15px;
-    }
-
-    .rooms
-    {
-        padding: 10px;
-    }
-
-    .rooms figure
-    {
-        width: 100%;
-    }
-
-    .rooms img
-    {
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .more
-    {
-        padding-left: 15px;
-        margin: 0;
-    }
-
-/* ---------------------------------------------------------- Activi ------------ */    
-
-    #activities
-    {
-        width: 100%;
-        margin: 0;
-    }
-
-    #activities
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .activities
-    {
-        padding-left: 15px;
-    }
-
-    #main-visit
-    {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #main-visit figure
-    {
-        margin: 10px;
-    } 
-
-    #main-visit img
-    {
-        object-fit: cover;
-        width: 100%;
-        height: 200px;
-    }
-
-/* ---------------------------------------------------------- Footer ------------ */      
-
-    #footer
-    {
-        background: #F2F2F2;
-        margin-top: 40px;
-        padding-bottom: 40px;
-        width: auto;
-    }
-
-    .bloc_footer
-    {
-        flex-direction: column;
-        margin-left: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .footer{
-        padding: 0%;
-        inline-size: auto;
-        line-height: 2;
-    }
-}
-
-
-/* Media Queries Screen */
-
-@media screen and (max-width: 748px)
-{
-
     .container, .navbar, aside{
         flex-direction: column;
     }
@@ -1253,6 +953,7 @@ padding-left: 50px;
         display: flex;
         flex-flow: column;
         width: 100%;
+        align-items: normal;
         background: none;
     }
 
