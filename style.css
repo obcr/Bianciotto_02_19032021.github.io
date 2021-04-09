@@ -54,8 +54,14 @@ body, html{
 
 #bloc_page
 {
-width: auto;
-margin: 0 3.125rem;  
+width: 1440px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+margin-top:-0.5%;
+margin-bottom:0%;
 }
 
 h3
@@ -102,7 +108,7 @@ header
 .logo
 {
     display: flex;
-    margin-bottom: 11px;
+    margin-bottom: 16px;
 }
 
 ul
@@ -238,7 +244,7 @@ input
 
 #sectionfiltre
 {
-	width: 65%;
+    width: fit-content;
 	display: flex;
     align-items: center;
 	justify-content: space-between;
@@ -248,6 +254,8 @@ input
 .nounderline
 {
 	text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 0.9rem;
     color: black;
 }
 
@@ -284,11 +292,6 @@ input
     cursor: pointer;
 }
 
-.filtre, p
-{
-    margin: auto;
-}
-
 .filtre:nth-child(1)
 {
     flex: 0.64;
@@ -313,10 +316,6 @@ input
 {
     flex: 1.81;
     margin-right: 24px;
-}
-.filtre:nth-child(5)
-{
-    flex: 2.39;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -379,7 +378,7 @@ input
 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 99.4%;
 }
 
 #rooms
@@ -395,7 +394,6 @@ input
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px;
 }
 
 .rooms
@@ -613,12 +611,13 @@ aside
     width: auto;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: auto;
+    margin: O;
 }
 
 #main-visit
 {
 display: flex;
+width: 99.4%;
 justify-content: space-between;
 }
 
@@ -694,24 +693,23 @@ padding-left: 50px;
 #footer
 {
     background: #F2F2F2;
+    width: auto;
     margin-top: 40px;
-    display: flex;
-    width: 100%;
 }
 
 .bloc_footer
 {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-left: 3.5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer
 {
     display: flex;
     flex-direction: column;
-    padding:30px 30px 30px 0px;
+    margin: 30px;
     width: 50%;
 }
 
@@ -739,310 +737,3 @@ padding-left: 50px;
 
 /* ------------------------------------------------------------------------------ */
 
-
-@media screen and (min-device-width: 220px) and (max-device-width: 425px)
-{
-    .container, .navbar, aside{
-        flex-direction: column;
-    }
-
-    #bloc_page
-    {
-        width: auto;
-        margin: auto;
-    }
-
-    body 
-    {
-        width: 100%;
-        padding-top: 15px;
-        overflow-x: hidden;
-    }
-
-/* ---------------------------------------------------------- Header ------------ */
-
-    header
-    {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    }  
-
-    .logo
-    {
-    display: flex;
-    align-items: flex-end;
-    }
-
-    h1
-    {
-    margin: 0;
-    width: 50%;
-    position: absolute;
-    padding-left: 15px;
-    }
-
-    #menu, #navbar
-    {
-    width: 100%;
-    }
-
-    #menu
-    {
-        display: flex;
-        justify-content: flex-end;
-        flex-flow: row wrap;
-    }
-
-    nav ul
-    {
-    padding: 0;
-    border-bottom: 2px solid #F2F2F2;
-    width: 100%;
-    }
-
-    nav
-    {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    }
-
-    li
-    {
-    text-align: center;
-    flex-basis: 50%;
-    }
-
-    li:hover
-    {
-    border-bottom: 3px solid #0065FC;
-    border-top: none;
-    }
-
-    li:focus
-    {
-    border-bottom: 3px solid #0065FC;
-    border-top: none;
-    }
-
-    .inscrire
-    {
-       order: -2;
-       display: flex;
-       padding-top: 40px;
-    }
-    .inscrire
-    {
-            margin-right: 25px;
-    }
-#trouver_herbergement h4{
-    font-size: 1.7rem;
-}
-
-
-
-/* ---------------------------------------------------------- Search ------------ */
-   
-    #search
-    {
-        width: auto;
-        margin: 0;
-    }
-
-    .search-button
-    {
-        display: none;
-    }
-
-    input
-    {
-    border-top: 2px solid #F2F2F2;
-    border-bottom: 2px solid #F2F2F2;
-    border-left: none;
-    border-right: none;
-    min-width: 229px;
-    height: 52px;
-    padding-left: 9px;    
-    }
-
-    .search
-    {
-        float: right;
-        margin-left: -10px;
-        background: #0065FC;
-        border: 18px solid #0065FC;
-        border-radius: 12px;
-        display: flex;
-    }
-
-    .fa-search
-    {
-        color: #ffffff;
-    }
-
-/* ---------------------------------------------------------- Filtre ------------ */
-
-#sectionfiltre
-    {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    }
-
-.filtre
-    {
-    margin: 7px;
-    }
-
-/* ---------------------------------------------------------- Heberg ------------ */
-
-    #container
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0;
-    }
-
-    aside
-    {
-        order: -1;
-        padding-right: 12px;
-        border-radius: 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    #aside
-    {
-        width: 100%;
-    }
-
-    .aside span
-    {
-        margin: 0;
-    }
-
-    .aside figure
-    {
-        width: auto;
-    }
-
-    #rooms
-    {
-        display: flex;
-        flex-direction: column;
-        background: none;
-        height: auto;
-        width: 100%;
-        padding-right: 38px;
-    }
-
-    #main-rooms
-    {
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-        align-items: normal;
-        background: none;
-    }
-
-    .rooms-title
-    {
-        margin-left: 15px;
-    }
-
-    .rooms
-    {
-        padding: 10px;
-    }
-
-    .rooms figure
-    {
-        width: 100%;
-        margin: auto;
-    }
-
-    .rooms img
-    {
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .more
-    {
-        padding-left: 15px;
-        margin: 0;
-    }
-
-/* ---------------------------------------------------------- Activi ------------ */    
-
-    #activities
-    {
-        width: 100%;
-        margin: 0;
-    }
-
-    #activities
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-right: 22px;
-    }
-
-    .activities
-    {
-        padding-left: 15px;
-    }
-
-    #main-visit
-    {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #main-visit figure
-    {
-        margin: 10px;
-    } 
-
-    #main-visit img
-    {
-        object-fit: cover;
-        width: 100%;
-        height: 200px;
-    }
-
-/* ---------------------------------------------------------- Footer ------------ */      
-
-    #footer
-    {
-        background: #F2F2F2;
-        margin-top: 40px;
-        padding-bottom: 40px;
-        width: auto;
-    }
-
-    .bloc_footer
-    {
-        flex-direction: column;
-        margin-left: 2.5rem;
-    }
-    .footer{
-        padding: 0%;
-        inline-size: auto;
-        line-height: 2;
-    }
-}
