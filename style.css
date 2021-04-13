@@ -1,4 +1,3 @@
-
 /* Font Awesome CSS*/
 
 .fa-map-marker-alt
@@ -59,9 +58,18 @@ h3
     font-family: 'Raleway', sans-serif;
 }
 
-#trouver_herbergement h3{
+#trouver_herbergement h3
+{
     font-size: 1.4rem;
-    padding-top: 0.6rem;
+    margin: 0%;
+}
+
+#trouver_herbergement
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px, 10px, 10px, 10px;
+    margin-bottom: 40px;
 }
 
 .filtres
@@ -89,7 +97,9 @@ p
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 5px 0px 5px;
 }
+
 .logo
 {
     display: flex;
@@ -163,11 +173,6 @@ li:focus
 
 /* Barre de recherche */
 
-#search
-{
-    padding-top: 1.25rem;
-    padding-bottom: 0.8rem;
-}
 
 #search-bar
 {
@@ -275,6 +280,7 @@ span h4{
 .sectionfiltre h4
 {
     padding-right: 25px;
+    padding-left: 10px;
 }
 
 .filtre
@@ -326,14 +332,12 @@ span h4{
 {
     width: auto;
     display: flex;
-    justify-content: space-between;
     padding-left: 0.6rem;
-    padding-top: 32px;
-    padding-bottom: 20px;
-
+    margin-top: 2rem;
 }
 
-#contour{
+#contour
+{
     float: left;
     display: flex;
     flex-direction: row;
@@ -371,6 +375,13 @@ span h4{
 
 /* Section herbergement marseille */
 
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+
 #herbergement_marseille
 {
     font-family: 'Raleway', sans-serif;
@@ -395,7 +406,7 @@ span h4{
 #main-rooms
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -425,8 +436,7 @@ span h4{
 
 .rooms-title
 {
-    padding: 20px 0px 20px 20px;
-    margin-left: 12px;
+    padding: 20px 0px 20px 42px;
     font-family: raleway;
     font-weight: bold;
     font-size: 1em;
@@ -487,9 +497,8 @@ span h4{
 
 .more
 {
-  padding: 20px;
-  margin-left: 12px;
-  font-family: raleway;
+padding: 20px 0px 20px 42px;
+font-family: raleway;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -578,7 +587,7 @@ aside
     width: 97%;
     padding: 20px;
     font-size: 1em;
-    margin-left: 5px;
+
 }
 
 .aside, h4, h3
@@ -705,7 +714,7 @@ padding-left: 25px;
 
 .activities
 {
-padding-left: 50px;
+padding-left: 42px;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -733,6 +742,7 @@ padding-left: 50px;
     margin-bottom: 1rem;
     font-family: 'Raleway', sans-serif;
     color: black;
+    font-weight: 500;
 }
 
 .footer a:visited
@@ -744,27 +754,14 @@ padding-left: 50px;
 
 .footer h4
 {
-    margin-bottom: 2rem;
+    margin-bottom: 2.3rem;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 /* ------------------------------------------------------------------------------ */
 @media screen and (min-width: 320px) and (max-width: 374px)
 {
-    #bloc_page
-    {
-    background-color: aquamarine;
-    width: auto;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top:-0.5%;
-    margin-bottom:0%;
-    margin-left: 20px;
-    margin-right: 20px;
-    }
-
     body
     {
         width: 100%;
@@ -869,6 +866,7 @@ padding-left: 50px;
         width: auto;
         display: flex;
         flex-direction: column;
+        margin: 0%;
     }
 
    #menu
@@ -904,8 +902,9 @@ padding-left: 50px;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-       padding: 0;
+       margin: 0%;
    }
+
    aside
    {
        order: -1;
@@ -1038,18 +1037,6 @@ padding-left: 50px;
 
 @media screen and (min-width: 375px) and (max-width: 767px)
 {
-    #bloc_page
-    {
-    background-color: aquamarine;
-    width: auto;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top:-0.5%;
-    margin-bottom:0%;
-    margin-left: 20px;
-    margin-right: 20px;
-    }
 
     body
     {
@@ -1151,12 +1138,6 @@ padding-left: 50px;
        display: flex;
        padding-top: 40px;
     }
-   .main-container
-    {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-    }
 
    #menu
    {
@@ -1191,7 +1172,7 @@ padding-left: 50px;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-       padding: 0;
+       margin: 0%;
    }
    aside
    {
@@ -1223,12 +1204,10 @@ padding-left: 50px;
     }
     #main-rooms
     {
-       display: flex;
-       background: none;
-    }
-    .rooms-title
-    {
-        margin-left: 15px;
+        display: flex;
+        background: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .rooms figure {
@@ -1248,68 +1227,92 @@ padding-left: 50px;
     }
     .more
     {
-        padding-left: 15px;
-        margin: 0;
+        padding-left: 20px;
+        margin-left: 0;
     }
+
     #activities
     {
        width: 100%;
        margin: 0;
     }
-    #activities {
+
+    #activities
+    {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-   }
-   .activities
-   {
-       padding-left: 15px;
-   }
+    }
+
     #main-visit
     {
        display: flex;
        flex-direction: column;
        width: 100%;
+       padding-right: 20px;
+       padding-left: 20px;
+       padding-bottom: 20px;
+   }
+ 
+   .activities {
+    padding-left: 20px;
     }
-    #main-visit figure
-   {
-       margin: 10px;
-    }
-    .vieuxp, .pom-fri, .calanques, .dame, .pomegues
+
+    .vieuxp, .calanques, .pomegues, .longchamp
     {
-        padding-bottom: 10px;
-        margin: 5px;
-        width: 100%;
+    margin: 0;
     }
-    .vieuxp h3, .pom-fri h3, .calanques h3, .dame h3, .pomegues h3
+
+    .pom-fri
     {
-        padding-left: 10px;
+    margin: 0;
     }
+
+    .dame-long
+    {
+    margin: 0;
+    }
+
     #main-visit img
     {
         object-fit: cover;
         width: 100%;
         height: 200px;
     }
+
     .bloc_footer
     {
        display: flex;
        flex-direction: column;
-       padding-bottom: 10px;
+       padding-bottom: 50px;
+       padding-top: 20px;
        width: 100%;
     }
-   .footer
-   {
-       padding-left: 20px;
-   }
-   .footer a
-   {
-       padding: 5px;
-   }
+
+    .footer
+    {
+    padding-left: 20px;
+    width: auto;
+    }
+
+    .footer a
+    {
+       margin-bottom: 15px;
+    }
+
+    .sectionfiltre h4
+    {
+        margin: 0%;
+        padding-bottom: 10px;
+    }
+    #information
+    {
+        margin: 0%;
+    }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1023px)
 {
-
     *{
         box-sizing: border-box;
     }
@@ -1324,8 +1327,9 @@ padding-left: 50px;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-       padding: 0;
+       margin: 0%;
     }
+    
     .filter
     {
         display: flex;
@@ -1350,16 +1354,75 @@ padding-left: 50px;
         order: -1;
         margin-bottom: 20px;
     }
+
     #main-visit
     {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    #trouver_herbergement h3 {
+        margin: 0%;
+    }
+
+    #trouver_herbergement
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px, 10px, 10px, 10px;
+    margin-bottom: 40px;
+}
+
+    .sectionfiltre h4
+    {
+        margin: 0%;
+        padding-bottom: 10px;
+    }
+
+    #navbar
+    {
+        height: 80px;
+    }
+
+    .rooms-title
+    {
+        padding: 20px 0px 20px 20px;
+    }
+
+    .more
+    {
+        padding: 20px 0px 20px 20px;
+    }
+
+    .activities
+    {
+        padding-left: 20px;
+    }
+
+    .bloc_footer
+    {
+        padding-left: 20px;
+    }
+
+    .vieuxp, .calanques, .pom-fri, .dame-long {
+        margin: 5px;
+        width: 47%;
+    }
+
+    #main-visit img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        object-fit: cover;
+        width: 358px;
+        margin: auto;
+    }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px)
 {
+
     .aside figcaption {
         width: auto;
         padding-left: 20px;
@@ -1444,62 +1507,10 @@ padding-left: 50px;
         margin: auto;
     }
 
-
+}
 /* ------------------------------------------------------------------------------ */
 
 
-    @media screen and (min-width: 1300px) and (max-width: 1599px) {
-        body {
-            width: 100%;
-        }
-        header {
-            max-width: 100rem;
-            margin:auto;
-        }
-        #rooms {
-            margin-right: 15px;
-        }
-        .main-container {
-            max-width: 100rem;
-            margin: auto;
-        }
-        #main-rooms {
-            margin: 10px;
-        }
-        #main-visit {
-            width: 100%;
-        }
-        #main-visit figure {
-             margin: 13px 10px;
-        }
-        footer {
-            max-width: 100rem;
-            margin:auto;
-        }
-    }
-    @media screen and (min-width: 1600px)
-    {
-        body {
-            width: 100%;
-            margin: auto;
-            overflow-x: hidden;
-        }
-
-        header {
-            max-width: 100rem;
-            margin:auto;
-        }
-
-        .main-container {
-            max-width: 100rem;
-            margin: auto;
-        }
-
-        footer {
-            max-width: 100rem;
-            margin:auto;
-        }
-    }
 
 
-}
+
