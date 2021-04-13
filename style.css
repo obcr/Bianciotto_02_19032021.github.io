@@ -52,17 +52,7 @@ body, html{
     font-family: 'Raleway', sans-serif;
 }
 
-#bloc_page
-{
-width: 1440px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin-left: auto;
-margin-right: auto;
-margin-top:-0.5%;
-margin-bottom:0%;
-}
+
 
 h3
 {
@@ -94,11 +84,6 @@ p
 
 /* Header Menu */
 
-header
-{
-   width: 100%;
-   height: 50px;
-}
 #navbar
 {
     display: flex;
@@ -195,25 +180,26 @@ li:focus
    border: 20px solid #F2F2F2;
    border-top-left-radius: 12px;
    border-bottom-left-radius: 12px;
-   background: #F2F2F2; 
-   
+   background: #F2F2F2;
+
 }
 
-.search 
+.search
 {
     display: none;
 }
 
 input
 {
+    border-radius: 0;
     border-top: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
     border-left: none;
     border-right: none;
-    width: 242px;
-    height: 52px;
+    width: 15rem;
+    height: 3.25rem;
     padding-left: 9px;
-        
+
 }
 
 .search-button
@@ -224,8 +210,8 @@ input
     color: #ffffff;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    width: 142px;
-    height: 52px;
+    width: 8.875rem;
+    height: 3.25rem;
 }
 
 
@@ -244,9 +230,21 @@ input
 
 #sectionfiltre
 {
+    width: auto;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.sectionfiltre
+{
     width: fit-content;
 	display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
 	justify-content: space-between;
     padding-top: 20px;
 }
@@ -268,11 +266,14 @@ input
 	border-radius:100%;
 	width:50px;
 	height:50px;
-} 
+}
 
-.filtre h4
+span h4{
+    margin-top: 30px;
+}
+
+.sectionfiltre h4
 {
-    padding-left: 2px;
     padding-right: 25px;
 }
 
@@ -281,7 +282,7 @@ input
     display: flex;
     justify-content:left;
     align-items: center;
-    margin-right: 25px;
+    margin: 5px;
     width: 100%;
     height: 50px;
     border: #F2F2F2 solid 2px;
@@ -292,29 +293,28 @@ input
     cursor: pointer;
 }
 
-.filtre:nth-child(1)
-{
-    flex: 0.64;
-    border: none;
-    border-radius: none;
-    cursor: not-allowed;
-    margin-right: 14px;
-    padding-left: 0.6rem;
-}
 
-.filtre:nth-child(2)
+.filtre:nth-child(1)
 {
     flex: 1.92;
     margin-right: 24px;
 }
-.filtre:nth-child(3)
+.filtre:nth-child(2)
 {
     flex: 1.49;
     margin-right: 24px;
 }
-.filtre:nth-child(4)
+.filtre:nth-child(3)
 {
     flex: 1.81;
+    margin-right: 24px;
+}
+.filtre:nth-child(4)
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
     margin-right: 24px;
 }
 
@@ -324,7 +324,7 @@ input
 
 #information
 {
-    width: 30%;
+    width: auto;
     display: flex;
     justify-content: space-between;
     padding-left: 0.6rem;
@@ -334,14 +334,19 @@ input
 }
 
 #contour{
-    float:left;
+    float: left;
     display: flex;
-    border-radius:100%;
-    width:23px;
-    height:23px;
-    border:2px solid #F2F2F2;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 100%;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #F2F2F2;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-top: -1px;
 }
-  
+
 .fa-info{
     color: #0065FC;
     align-items: center;
@@ -349,17 +354,16 @@ input
 }
 
 .inf {
-    width: 445px;
+    width: auto;
     height: 23px;
-    padding-top:  3px;
-    text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     margin: auto;
 }
 .info:nth-child(1)
 {
-    width: 445px;
+    display: flex;
+    width: auto;
     height: 23px;
 }
 
@@ -385,7 +389,7 @@ input
 {
     background: #F2F2F2;
     border-radius: 25px;
-    width: 65%;
+    width: 64%;
 }
 
 #main-rooms
@@ -445,7 +449,7 @@ input
 {
     color: #F2F2F2;
     font-size: small;
-}  
+}
 
 .rooms figure
 {
@@ -526,7 +530,7 @@ margin: 5px;
 
 .pop p
 {
-    margin-bottom: 35px; 
+    margin-bottom: 35px;
 }
 
 .aside img
@@ -535,7 +539,7 @@ margin: 5px;
     height: 8em;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .aside figcaption
@@ -562,7 +566,7 @@ aside
     background: #F2F2F2;
     border-radius: 25px;
     float: right;
-    width: 32%;
+    width: 34%;
     height: auto;
 }
 
@@ -608,16 +612,19 @@ aside
 
 #activities
 {
-    width: auto;
+    display: flex;
+    width: 99.4%;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: O;
+    margin-bottom: 40px;
 }
 
 #main-visit
 {
 display: flex;
-width: 99.4%;
+flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-between;
 }
 
@@ -632,31 +639,32 @@ margin: auto;
 
 .vieuxp img, .calanques img
 {
-height: 450px;
+height: 390px;
 }
 
-.pomegues img, .dame img, .longchamp img
+.frioul img
 {
-height: 200px;
-}
-
-.pomegues
-{
-    margin-bottom: 1.7rem;
-}
-
-.dame
-{
-    margin-bottom: 1.7rem;
-}
-
-.frioul img, .longchamp img
-{
-height: 170px;
+height: 108px;
 align-content: center;
 }
 
-#main-visit a 
+.longchamp img
+{
+height: 153px;
+align-content: center;
+}
+
+.pomegues img
+{
+height: 180px;
+}
+
+.dame img
+{
+height: 139px;
+}
+
+#main-visit a
 {
 text-decoration: none;
 color: black;
@@ -666,14 +674,28 @@ font-size: small;
 .vieuxp, .calanques, .pomegues, .frioul, .dame, .longchamp
 {
 box-shadow: 8px 8px 12px #aaaaaa38;
+background-color: white;
 border: 1px solid transparent;
 border-radius: 25px;
 box-sizing: border-box;
 }
 
-.pomegues, .dame
+.vieuxp, .calanques, .pom-fri, .dame-long
 {
-padding-bottom: 2px;
+margin: 5px;
+}
+
+.dame-long
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pom-fri
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .vieuxp h3, .calanques h3, .pomegues h3, .frioul h3, .dame h3, .longchamp h3
@@ -690,27 +712,19 @@ padding-left: 50px;
 
 /* Footer */
 
-#footer
-{
-    background: #F2F2F2;
-    width: auto;
-    margin-top: 40px;
-}
-
 .bloc_footer
 {
+    background: #F2F2F2;
     display: flex;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer
 {
     display: flex;
+    width: 32.5%;
     flex-direction: column;
-    margin: 30px;
-    width: 50%;
 }
 
 .footer a
@@ -736,4 +750,756 @@ padding-left: 50px;
 }
 
 /* ------------------------------------------------------------------------------ */
+@media screen and (min-width: 320px) and (max-width: 374px)
+{
+    #bloc_page
+    {
+    background-color: aquamarine;
+    width: auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:-0.5%;
+    margin-bottom:0%;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
 
+    body
+    {
+        width: 100%;
+        padding-top: 15px;
+        overflow-x: hidden;
+    }
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    .logo {
+    display: flex;
+    align-items: flex-end;
+}
+     h1
+    {
+        width: 50%;
+        position: absolute;
+        padding-left: 15px;
+    }
+
+    #menu, #navbar
+    {
+        width: 100%;
+    }
+    nav ul
+    {
+        padding: 0;
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+
+     }
+     nav
+     {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+     }
+    li
+    {
+        text-align: center;
+        flex-basis: 50%;
+    }
+    li:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+    li:focus
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    .inscrire
+    {
+    order: -1;
+    }
+
+    #search
+    {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .search-button
+    {
+        display: none;
+    }
+    .search
+    {
+        background: #0065FC;
+        border: 19px solid #0065FC;
+        border-radius: 16px;
+        display: flex;
+        margin-left: -13px;
+    }
+
+    .search-bar i
+    {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+
+    .fa-search
+    {
+        color: #ffffff;
+    }
+    .sign-in
+    {
+       order: -2;
+       display: flex;
+       padding-top: 40px;
+    }
+   .main-container
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+   #menu
+   {
+       display: flex;
+       justify-content: flex-end;
+       flex-flow: row wrap;
+   }
+   #filter
+   {
+       padding-left: 15px;
+       margin: 0;
+   }
+   .filter
+   {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .filter-title
+   {
+       width: 100%;
+        margin: 0;
+   }
+   .price, .family, .romantic, .animal {
+       margin-bottom: 10px;
+   }
+  .info {
+      padding: 10px 0;
+  }
+   #container
+   {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding: 0;
+   }
+   aside
+   {
+       order: -1;
+       padding: 0;
+       border-radius: 0;
+       margin: 0;
+       width: 100%;
+    }
+    #aside
+    {
+        width: 100%;
+    }
+    .aside span
+    {
+        margin: 0;
+    }
+    .aside figure
+    {
+        width: auto;
+    }
+
+    .aside figcaption, h4, p
+    {	
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    }
+
+    #rooms
+    {
+       display: flex;
+       flex-direction: column;
+       background: none;
+       height: auto;
+       width: 100%;
+    }
+    #main-rooms
+    {
+       display: flex;
+       background: none;
+    }
+    .rooms-title
+    {
+        margin-left: 15px;
+    }
+
+    .rooms figure {
+        margin: 0;
+        background: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 25px;
+        box-shadow: 4px 4px 6px #aaaaaa38;
+        width: 333px;
+        height: 204px;
+    }
+
+    .rooms
+    {
+
+        padding: 10px;
+    }
+    .rooms img
+    {
+        object-fit: cover;
+        width: 100%;
+    }
+    .more
+    {
+        padding-left: 15px;
+        margin: 0;
+    }
+    #activities
+    {
+       width: 100%;
+       margin: 0;
+    }
+    #activities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+   }
+   .activities
+   {
+       padding-left: 15px;
+   }
+    #main-visit
+    {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+    }
+    #main-visit figure
+   {
+       margin: 10px;
+    }
+    .vieuxp, .pom-fri, .calanques, .dame, .pomegues
+    {
+        padding-bottom: 10px;
+        margin: 5px;
+        width: 100%;
+    }
+    .vieuxp h3, .pom-fri h3, .calanques h3, .dame h3, .pomegues h3
+    {
+        padding-left: 10px;
+    }
+    #main-visit img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+    }
+    .bloc_footer
+    {
+       display: flex;
+       flex-direction: column;
+       padding-bottom: 10px;
+       width: 100%;
+    }
+   .footer
+   {
+       padding-left: 20px;
+   }
+   .footer a
+   {
+       padding: 5px;
+   }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px)
+{
+    #bloc_page
+    {
+    background-color: aquamarine;
+    width: auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:-0.5%;
+    margin-bottom:0%;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+    body
+    {
+        width: 100%;
+        padding-top: 15px;
+        overflow-x: hidden;
+    }
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    .logo
+    {
+    display: flex;
+    align-items: flex-end;
+    }
+     h1
+    {
+        width: 50%;
+        position: absolute;
+        padding-left: 15px;
+    }
+
+    #menu, #navbar
+    {
+        width: 100%;
+    }
+    nav ul
+    {
+        padding: 0;
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+
+     }
+     nav
+     {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+     }
+    li
+    {
+        text-align: center;
+        flex-basis: 50%;
+    }
+    li:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+    li:focus
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    .inscrire
+    {
+    order: -1;
+    }
+
+    #search
+    {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .search-button
+    {
+        display: none;
+    }
+    .search
+    {
+        background: #0065FC;
+        border: 19px solid #0065FC;
+        border-radius: 16px;
+        display: flex;
+        margin-left: -13px;
+    }
+
+    .search-bar i
+    {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+
+    .fa-search
+    {
+        color: #ffffff;
+    }
+    .sign-in
+    {
+       order: -2;
+       display: flex;
+       padding-top: 40px;
+    }
+   .main-container
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+   #menu
+   {
+       display: flex;
+       justify-content: flex-end;
+       flex-flow: row wrap;
+   }
+   #filter
+   {
+       padding-left: 15px;
+       margin: 0;
+   }
+   .filter
+   {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .filter-title
+   {
+       width: 100%;
+        margin: 0;
+   }
+   .price, .family, .romantic, .animal {
+       margin-bottom: 10px;
+   }
+  .info {
+      padding: 10px 0;
+  }
+   #container
+   {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding: 0;
+   }
+   aside
+   {
+       order: -1;
+       padding: 0;
+       border-radius: 0;
+       margin: 0;
+       width: 100%;
+    }
+    #aside
+    {
+        width: 100%;
+    }
+    .aside span
+    {
+        margin: 0;
+    }
+    .aside figure
+    {
+        width: auto;
+    }
+    #rooms
+    {
+       display: flex;
+       flex-direction: column;
+       background: none;
+       height: auto;
+       width: 100%;
+    }
+    #main-rooms
+    {
+       display: flex;
+       background: none;
+    }
+    .rooms-title
+    {
+        margin-left: 15px;
+    }
+
+    .rooms figure {
+        margin: 0;
+        background: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 25px;
+        box-shadow: 4px 4px 6px #aaaaaa38;
+        width: 333px;
+        height: 204px;
+    }
+
+    .rooms img
+    {
+        object-fit: cover;
+        width: 100%;
+    }
+    .more
+    {
+        padding-left: 15px;
+        margin: 0;
+    }
+    #activities
+    {
+       width: 100%;
+       margin: 0;
+    }
+    #activities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+   }
+   .activities
+   {
+       padding-left: 15px;
+   }
+    #main-visit
+    {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+    }
+    #main-visit figure
+   {
+       margin: 10px;
+    }
+    .vieuxp, .pom-fri, .calanques, .dame, .pomegues
+    {
+        padding-bottom: 10px;
+        margin: 5px;
+        width: 100%;
+    }
+    .vieuxp h3, .pom-fri h3, .calanques h3, .dame h3, .pomegues h3
+    {
+        padding-left: 10px;
+    }
+    #main-visit img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+    }
+    .bloc_footer
+    {
+       display: flex;
+       flex-direction: column;
+       padding-bottom: 10px;
+       width: 100%;
+    }
+   .footer
+   {
+       padding-left: 20px;
+   }
+   .footer a
+   {
+       padding: 5px;
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body
+    {
+        width: 100%;
+    }
+
+    #container
+    {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding: 0;
+    }
+    .filter
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    #rooms
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    aside
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        order: -1;
+        margin-bottom: 20px;
+    }
+    #main-visit
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px)
+{
+    .aside figcaption {
+        width: auto;
+        padding-left: 20px;
+    }
+
+    .rooms {
+        width: 260px;
+    }
+
+    .filter
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #main-visit .dame-long
+    {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    }
+
+    .dame-long
+    {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    }
+
+    .vieuxp, .calanques, .pom-fri {
+        margin: 14px;
+    }
+
+    .dame
+    {
+	display: flex;
+    width: 460px;
+	box-shadow: 8px 8px 12px #aaaaaa38;
+	background-color: white;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	box-sizing: border-box;
+    margin: 17px;
+    }
+
+    .longchamp
+    {
+	display: flex;
+    width: 460px;
+	box-shadow: 8px 8px 12px #aaaaaa38;
+	background-color: white;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	box-sizing: border-box;
+    margin: 17px;
+    }
+
+    #main-visit .dame img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        object-fit: cover;
+        width: 460px;
+        height: 152px;
+        margin: auto;
+    }
+
+    #main-visit .longchamp img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        object-fit: cover;
+        width: 460px;
+        margin: auto;
+    }
+    
+    #main-visit .dame img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        object-fit: cover;
+        width: 460px;
+        margin: auto;
+    }
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+    @media screen and (min-width: 1300px) and (max-width: 1599px) {
+        body {
+            width: 100%;
+        }
+        header {
+            max-width: 100rem;
+            margin:auto;
+        }
+        #rooms {
+            margin-right: 15px;
+        }
+        .main-container {
+            max-width: 100rem;
+            margin: auto;
+        }
+        #main-rooms {
+            margin: 10px;
+        }
+        #main-visit {
+            width: 100%;
+        }
+        #main-visit figure {
+             margin: 13px 10px;
+        }
+        footer {
+            max-width: 100rem;
+            margin:auto;
+        }
+    }
+    @media screen and (min-width: 1600px)
+    {
+        body {
+            width: 100%;
+            margin: auto;
+            overflow-x: hidden;
+        }
+
+        header {
+            max-width: 100rem;
+            margin:auto;
+        }
+
+        .main-container {
+            max-width: 100rem;
+            margin: auto;
+        }
+
+        footer {
+            max-width: 100rem;
+            margin:auto;
+        }
+    }
+
+
+}
