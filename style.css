@@ -1102,6 +1102,25 @@ padding-left: 42px;
     order: -1;
     }
 
+    input {
+        width: 16rem;
+    }
+
+    #trouver_herbergement, h3 {
+        font-size: 1.4rem;
+        margin: 0%;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #trouver_herbergement, p {
+        font-size: medium;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+    }
+
     #search
     {
         margin: 0;
@@ -1116,7 +1135,7 @@ padding-left: 42px;
     .search
     {
         background: #0065FC;
-        border: 19px solid #0065FC;
+        border: 18px solid #0065FC;
         border-radius: 16px;
         display: flex;
         margin-left: -13px;
@@ -1167,6 +1186,18 @@ padding-left: 42px;
   .info {
       padding: 10px 0;
   }
+
+
+
+  #trouver_herbergement
+  {
+    margin-bottom: 65px;
+    }
+
+    #information
+    {
+        margin: 30px, 0px, 0px,0px;
+    }
    #container
    {
        display: flex;
@@ -1231,10 +1262,11 @@ padding-left: 42px;
         margin-left: 0;
     }
 
-    #activities
+/* --------------------- */    
+
+    .activities
     {
-       width: 100%;
-       margin: 0;
+    padding-left: 20px;
     }
 
     #activities
@@ -1242,43 +1274,62 @@ padding-left: 42px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
+        margin: 0;
     }
 
     #main-visit
     {
        display: flex;
        flex-direction: column;
-       width: 100%;
        padding-right: 20px;
        padding-left: 20px;
        padding-bottom: 20px;
-   }
- 
-   .activities {
-    padding-left: 20px;
     }
 
-    .vieuxp, .calanques, .pomegues, .longchamp
+   #main-visit img
     {
-    margin: 0;
+       object-fit: cover;
+       width: 100%;
+       height: 80px;
     }
 
     .pom-fri
     {
-    margin: 0;
+    margin: 0px;
     }
 
     .dame-long
     {
-    margin: 0;
+    margin: 0px;
     }
 
-    #main-visit img
+    .vieuxp, .calanques
     {
-        object-fit: cover;
-        width: 100%;
-        height: 200px;
+    margin-bottom: 30px;
     }
+
+    .frioul
+    {
+    margin-bottom: 30px;
+    }
+
+    .pomegues
+    {
+    margin-bottom: 30px;
+    }
+
+    .dame
+    {
+    margin-bottom: 30px;
+    }
+
+    .longchamp
+    {
+    margin-bottom: 30px;
+    }
+
+/* --------------------- */
 
     .bloc_footer
     {
@@ -1304,10 +1355,6 @@ padding-left: 42px;
     {
         margin: 0%;
         padding-bottom: 10px;
-    }
-    #information
-    {
-        margin: 0%;
     }
 
 }
