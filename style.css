@@ -761,6 +761,7 @@ padding-left: 42px;
 /* ------------------------------------------------------------------------------ */
 @media screen and (min-width: 320px) and (max-width: 374px)
 {
+
     body
     {
         width: 100%;
@@ -775,53 +776,81 @@ padding-left: 42px;
         margin: 0;
         width: 100%;
     }
-    .logo {
+
+    .logo
+    {
     display: flex;
     align-items: flex-end;
-}
-     h1
+    }
+
+    .logo h1
     {
         width: 50%;
         position: absolute;
-        padding-left: 15px;
+        padding-left: 35px;
+        margin: 0;
     }
 
     #menu, #navbar
     {
         width: 100%;
     }
+
     nav ul
     {
         padding: 0;
         border-bottom: 2px solid #F2F2F2;
         width: 100%;
+    }
 
-     }
-     nav
-     {
+    nav
+    {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-     }
+    }
+
     li
     {
         text-align: center;
         flex-basis: 50%;
     }
+
     li:hover
     {
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
+
     li:focus
     {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
+
     .inscrire
     {
-    order: -1;
+       order: -2;
+       display: flex;
+       padding-top: 40px;
+    }
+
+    input {
+        width: 14rem;
+    }
+
+    #trouver_herbergement h3 {
+        font-size: 1.4rem;
+        margin: 0%;
+        padding-top: 10px;
+        padding-left: 12px;
+        padding-right: 15px;
+    }
+
+    #trouver_herbergement p {
+        font-size: medium;
+        padding-left: 15px;
     }
 
     #search
@@ -838,7 +867,7 @@ padding-left: 42px;
     .search
     {
         background: #0065FC;
-        border: 19px solid #0065FC;
+        border: 18px solid #0065FC;
         border-radius: 16px;
         display: flex;
         margin-left: -13px;
@@ -855,44 +884,83 @@ padding-left: 42px;
         color: #ffffff;
     }
 
-    .inscrire
+    #menu
     {
-       order: -2;
-       display: flex;
-       padding-top: 40px;
-    }
-
-    .main-container
-    {
-        width: auto;
         display: flex;
-        flex-direction: column;
-        margin: 0%;
+        justify-content: flex-end;
+        flex-flow: row wrap;
     }
 
-   #menu
-   {
-       display: flex;
-       justify-content: flex-end;
-       flex-flow: row wrap;
-   }
+    .price, .family, .romantic, .animal {
+        margin-bottom: 10px;
+    }
 
-   .price, .family, .romantic, .animal {
-       margin-bottom: 10px;
-   }
-  .info {
-      padding: 10px 0;
-  }
-   #container
-   {
+        .filtre:nth-child(1)
+    {
+        flex: 0.2;
+        margin-right: 24px;
+    }
+    .filtre:nth-child(2)
+    {
+        flex: 0.4;
+        margin-right: 24px;
+    }
+    .filtre:nth-child(3)
+    {
+        flex: 1.1;
+        margin-right: 24px;
+    }
+    .filtre:nth-child(4)
+    {
+        flex: 2.81;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: auto;
+        margin-right: 24px;
+    }
+
+    .filtre p
+    {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        padding-left: 0;
+    }
+
+    .info {
+        padding: 10px 0;
+    }
+
+    .aside figure figcaption p
+    {
+    padding-right: 0px;
+    margin-bottom: 20px;
+    }
+
+    .aside figcaption
+    {
+        width: 170px;
+        padding-left: 5px;
+    }
+
+    #trouver_herbergement
+    {
+    margin-bottom: 65px;
+    }
+
+    #information
+    {
+        margin: 30px, 0px, 0px,0px;
+    }
+    #container
+    {
        display: flex;
        flex-direction: column;
        justify-content: space-between;
        margin: 0%;
-   }
-
-   aside
-   {
+    }
+    aside
+    {
        order: -1;
        padding: 0;
        border-radius: 0;
@@ -911,16 +979,6 @@ padding-left: 42px;
     {
         width: auto;
     }
-
-    .aside figcaption, h4, p
-    {	
-    width: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 20px;
-    }
-
     #rooms
     {
        display: flex;
@@ -928,15 +986,14 @@ padding-left: 42px;
        background: none;
        height: auto;
        width: 100%;
+       margin-bottom: 20px;
     }
     #main-rooms
     {
-       display: flex;
-       background: none;
-    }
-    .rooms-title
-    {
-        margin-left: 15px;
+        display: flex;
+        background: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .rooms figure {
@@ -949,76 +1006,134 @@ padding-left: 42px;
         height: 204px;
     }
 
-    .rooms
-    {
-
-        padding: 10px;
-    }
     .rooms img
     {
         object-fit: cover;
         width: 100%;
     }
+
+    .rooms-title
+    {
+        padding: 20px 0px 20px 5px;
+    }
+
+    .rooms:nth-child(6)
+    {
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+
     .more
     {
-        padding-left: 15px;
-        margin: 0;
+        padding-left: 24px;
+        margin-left: 0;
     }
+
+/* --------------------- */    
+
+    .activities
+    {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
     #activities
     {
-       width: 100%;
-       margin: 0;
-    }
-    #activities {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-   }
-   .activities
-   {
-       padding-left: 15px;
-   }
+        width: 100%;
+        margin: 0;
+    }
+
     #main-visit
     {
        display: flex;
        flex-direction: column;
+       padding-right: 20px;
+       padding-left: 20px;
+       padding-bottom: 20px;
+    }
+
+   #main-visit img
+    {
+       object-fit: cover;
        width: 100%;
+       height: 110px;
     }
-    #main-visit figure
-   {
-       margin: 10px;
-    }
-    .vieuxp, .pom-fri, .calanques, .dame, .pomegues
+
+    .pom-fri
     {
+    margin: 0px;
+    }
+
+    .dame-long
+    {
+    margin: 0px;
+    }
+
+    .vieuxp, .calanques
+    {
+    margin-bottom: 30px;
+    }
+
+    .frioul
+    {
+    margin-bottom: 30px;
+    }
+
+    .pomegues
+    {
+    margin-bottom: 30px;
+    }
+
+    .dame
+    {
+    margin-bottom: 30px;
+    }
+
+    .longchamp
+    {
+    margin-bottom: 30px;
+    }
+
+    .vieuxp h3, .calanques h3, .pomegues h3, .frioul h3, .dame h3, .longchamp h3
+    {
+        padding-left: 15px;
         padding-bottom: 10px;
-        margin: 5px;
-        width: 100%;
+        font-size: medium;
     }
-    .vieuxp h3, .pom-fri h3, .calanques h3, .dame h3, .pomegues h3
-    {
-        padding-left: 10px;
-    }
-    #main-visit img
-    {
-        object-fit: cover;
-        width: 100%;
-        height: 200px;
-    }
+
+/* --------------------- */
+
     .bloc_footer
     {
        display: flex;
        flex-direction: column;
-       padding-bottom: 10px;
+       padding-bottom: 50px;
+       padding-top: 20px;
        width: 100%;
     }
-   .footer
-   {
-       padding-left: 20px;
-   }
-   .footer a
-   {
-       padding: 5px;
-   }
+
+    .footer
+    {
+    padding-left: 20px;
+    width: auto;
+    }
+
+    .footer a
+    {
+       margin-bottom: 15px;
+    }
+
+    .sectionfiltre h4
+    {
+        margin: 0%;
+        padding-bottom: 10px;
+    }
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px)
@@ -1045,7 +1160,7 @@ padding-left: 42px;
     align-items: flex-end;
     }
 
-    h1
+    .logo h1
     {
         width: 50%;
         position: absolute;
@@ -1084,7 +1199,7 @@ padding-left: 42px;
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
-    
+
     li:focus
     {
         border-top: none;
