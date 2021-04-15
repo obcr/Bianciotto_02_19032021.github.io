@@ -51,7 +51,17 @@ body, html{
     font-family: 'Raleway', sans-serif;
 }
 
+body,
+{
+    max-width: 1440px;
+    margin: 0;
+}
 
+header, #trouver_herbergement
+{
+    max-width: 1340px;
+    margin: auto;
+}
 
 h3
 {
@@ -68,7 +78,6 @@ h3
 {
     display: flex;
     flex-direction: column;
-    padding: 0px, 10px, 10px, 10px;
     margin-bottom: 40px;
 }
 
@@ -377,8 +386,9 @@ span h4{
 .main-container
 {
     display: flex;
+    max-width: 1340px;
     flex-direction: column;
-    margin: 0%;
+    margin: auto;
 }
 
 #herbergement_marseille
@@ -392,7 +402,6 @@ span h4{
 {
     display: flex;
     justify-content: space-between;
-    width: 99.4%;
 }
 
 #rooms
@@ -551,7 +560,7 @@ margin: 5px;
 
 .aside figcaption
 {
-    width: 40%;
+    width: 50%;
     padding-left: 20px;
 }
 
@@ -689,7 +698,7 @@ box-sizing: border-box;
 
 .vieuxp, .calanques, .pom-fri, .dame-long
 {
-margin: 5px;
+margin: 30px, 15px, 5px, 15px;
 }
 
 .dame-long
@@ -713,24 +722,33 @@ padding-left: 25px;
 .activities
 {
 padding-left: 42px;
+padding-bottom: 40px;
+padding-top: 30px;
 }
 
 /* ------------------------------------------------------------------------------ */
 
 /* Footer */
 
-.bloc_footer
+footer
 {
     background: #F2F2F2;
+}
+
+.bloc_footer
+{
     display: flex;
+    max-width: 1340px;
     flex-wrap: wrap;
-    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .footer
 {
     display: flex;
-    width: 32.5%;
+    width: 30%;
+    margin-left: 20px;
     flex-direction: column;
 }
 
@@ -847,8 +865,32 @@ padding-left: 42px;
         padding-right: 15px;
     }
 
-    #trouver_herbergement p {
-        font-size: medium;
+    .filtre:nth-child(3)
+    {
+        flex: 0.4;
+        width: 100%;
+        margin-right: 24px;
+    }
+    .filtre:nth-child(4)
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 73%;
+        margin-right: 24px;
+    }
+
+    #trouver_herbergement .filtre p
+    {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        padding-left: 0;
+    }
+
+    #trouver_herbergement p
+    {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
         padding-left: 15px;
     }
 
@@ -904,27 +946,6 @@ padding-left: 42px;
         flex: 0.4;
         margin-right: 24px;
     }
-    .filtre:nth-child(3)
-    {
-        flex: 1.1;
-        margin-right: 24px;
-    }
-    .filtre:nth-child(4)
-    {
-        flex: 2.81;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: auto;
-        margin-right: 24px;
-    }
-
-    .filtre p
-    {
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        padding-left: 0;
-    }
 
     .info {
         padding: 10px 0;
@@ -958,6 +979,7 @@ padding-left: 42px;
        justify-content: space-between;
        margin: 0%;
     }
+    
     aside
     {
        order: -1;
@@ -966,18 +988,28 @@ padding-left: 42px;
        margin: 0;
        width: 100%;
     }
+
     #aside
     {
         width: 100%;
     }
+
     .aside span
     {
         margin: 0;
     }
+
     .aside figure
     {
         width: auto;
     }
+
+    .aside figcaption
+    {
+        width: 53%;
+        padding-left: 0px;
+    }
+
     #rooms
     {
        display: flex;
@@ -1283,20 +1315,19 @@ padding-left: 42px;
     }
     .filtre:nth-child(3)
     {
-        flex: 1.1;
+        flex: 0.4;
         margin-right: 24px;
     }
     .filtre:nth-child(4)
     {
-        flex: 2.81;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        width: auto;
+        width: 62%;
         margin-right: 24px;
     }
 
-    .filtre p
+    #trouver_herbergement .filtre p
     {
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
@@ -1348,6 +1379,13 @@ padding-left: 42px;
     {
         width: auto;
     }
+
+    .aside figcaption
+    {
+        width: 60%;
+        padding-left: 20px;
+    }
+
     #rooms
     {
        display: flex;
@@ -1404,8 +1442,9 @@ padding-left: 42px;
 
     .activities
     {
-        padding-left: 10px;
+        padding-left: 20px;
         padding-bottom: 10px;
+        padding-top: 0;
     }
 
     #activities
@@ -1602,7 +1641,7 @@ padding-left: 42px;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         object-fit: cover;
-        width: 358px;
+        width: 100%;
         margin: auto;
     }
 
@@ -1625,6 +1664,7 @@ padding-left: 42px;
     #main-visit .dame-long
     {
     display: flex;
+    width: 100%;
     flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
