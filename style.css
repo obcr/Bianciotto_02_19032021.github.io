@@ -16,16 +16,19 @@
     margin: auto;
     color: #0065FC;
 }
+
 .fa-child
 {
     margin: auto;
     color: #0065FC;
 }
+
 .fa-dog
 {
     margin: auto;
     color: #0065FC;
 }
+
 .fa-heart
 {
     margin: auto;
@@ -43,7 +46,8 @@
 
 /* Body */
 
-*{
+*
+{
 	box-sizing: border-box;
 }
 
@@ -51,9 +55,8 @@ body, html{
     font-family: 'Raleway', sans-serif;
 }
 
-body,
+body
 {
-    max-width: 1440px;
     margin: 0;
 }
 
@@ -164,8 +167,9 @@ li a:hover
     color: #0065FC;
 }
 
-li {
-    border-top: 3px solid #fff;
+li
+{
+    border-top: 3px solid #ffffff;
 }
 
 li:hover
@@ -228,14 +232,14 @@ input
     height: 3.25rem;
 }
 
-
-#sectionfiltre, #information
-{
-    margin-left: 0.6 rem;
-}
 /* ------------------------------------------------------------------------------ */
 
 /* Les Filtres */
+
+.filtre
+{
+    margin: 0%;
+}
 
 .filtre:active {
     background-color: #0065FC;
@@ -259,7 +263,7 @@ input
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-	justify-content: space-between;
+	justify-content: flex-start;
     padding-top: 20px;
 }
 
@@ -308,22 +312,24 @@ span h4{
     cursor: pointer;
 }
 
-
 .filtre:nth-child(1)
 {
     flex: 1.92;
     margin-right: 24px;
 }
+
 .filtre:nth-child(2)
 {
     flex: 1.49;
     margin-right: 24px;
 }
+
 .filtre:nth-child(3)
 {
     flex: 1.81;
     margin-right: 24px;
 }
+
 .filtre:nth-child(4)
 {
     display: flex;
@@ -339,10 +345,9 @@ span h4{
 
 #information
 {
-    width: auto;
-    display: flex;
-    padding-left: 0.6rem;
-    margin-top: 2rem;
+display: flex;
+margin-top: 30px;
+margin-left: 15px; 
 }
 
 #contour
@@ -367,15 +372,15 @@ span h4{
 }
 
 .inf {
-    width: auto;
+    display: flex;
     height: 23px;
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
     margin: auto;
 }
+
 .info:nth-child(1)
 {
-    width: 90%;
     height: 23px;
 }
 
@@ -474,7 +479,7 @@ span h4{
     background: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 25px;
-    box-shadow: 4px 4px 6px #aaaaaa38;
+    box-shadow: 8px 8px 12px #aaaaaa38;
     width: 242px;
     height: 204px;
 }
@@ -608,7 +613,7 @@ aside
     background: #ffffff;
     border: 4px solid #ffffff;
     border-radius: 25px;
-    box-shadow: 4px 4px 6px #aaaaaa38;
+    box-shadow: 8px 8px 12px #aaaaaa38;
     margin: 10px 20px;
 }
 
@@ -694,11 +699,6 @@ background-color: white;
 border: 1px solid transparent;
 border-radius: 25px;
 box-sizing: border-box;
-}
-
-.vieuxp, .calanques, .pom-fri, .dame-long
-{
-margin: 30px, 15px, 5px, 15px;
 }
 
 .dame-long
@@ -970,7 +970,7 @@ footer
 
     #information
     {
-        margin: 30px, 0px, 0px,0px;
+        margin: 30px 0px 0px 0px;
     }
     #container
     {
@@ -1032,7 +1032,7 @@ footer
         background: #ffffff;
         border: 2px solid #ffffff;
         border-radius: 25px;
-        box-shadow: 4px 4px 6px #aaaaaa38;
+        box-shadow: 8px 8px 12px #aaaaaa38;
         width: 333px;
         height: 204px;
     }
@@ -1258,7 +1258,7 @@ footer
 
     #trouver_herbergement p {
         font-size: medium;
-        padding-left: 15px;
+        padding-left: 12px;
     }
 
     #search
@@ -1272,6 +1272,7 @@ footer
     {
         display: none;
     }
+
     .search
     {
         background: #0065FC;
@@ -1350,31 +1351,42 @@ footer
 
     #information
     {
-        margin: 30px, 0px, 0px,0px;
+    margin: 30px 0px 0px 0px;
+    margin-left: 16px;
     }
+
+    .sectionfiltre
+    {
+    padding-left: 10px;
+    }
+
     #container
     {
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0%;
     }
+
     aside
     {
-       order: -1;
-       padding: 0;
-       border-radius: 0;
-       margin: 0;
-       width: 100%;
+    order: -1;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
     }
+
     #aside
     {
         width: 100%;
     }
+
     .aside span
     {
         margin: 0;
     }
+
     .aside figure
     {
         width: auto;
@@ -1384,6 +1396,10 @@ footer
     {
         width: 60%;
         padding-left: 20px;
+    }
+
+    .aside-title {
+        padding: 20px 20px 20px 24px;
     }
 
     #rooms
@@ -1408,7 +1424,7 @@ footer
         background: #ffffff;
         border: 2px solid #ffffff;
         border-radius: 25px;
-        box-shadow: 4px 4px 6px #aaaaaa38;
+        box-shadow: 8px 8px 12px #aaaaaa38;
         width: 333px;
         height: 204px;
     }
@@ -1421,7 +1437,7 @@ footer
 
     .rooms-title
     {
-        padding: 20px 0px 20px 5px;
+        padding: 20px 0px 20px 24px;
     }
 
     .rooms:nth-child(6)
@@ -1554,6 +1570,12 @@ footer
         width: 100%;
     }
 
+    header
+    {
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+
     #container
     {
        display: flex;
@@ -1570,6 +1592,7 @@ footer
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     aside
     {
         width: 100%;
@@ -1588,17 +1611,29 @@ footer
         flex-wrap: wrap;
     }
 
-    #trouver_herbergement h3 {
-        margin: 0%;
+    #trouver_herbergement h3 p
+    {
+        margin-left: 15px;
+    }
+
+    #information
+    {
+    margin-top: 30px;
+    margin-left: 15px;
+    }
+
+    .inf
+    {
+    display: flex;
     }
 
     #trouver_herbergement
-{
+    {
     display: flex;
     flex-direction: column;
-    padding: 0px, 10px, 10px, 10px;
+    padding: 0px 15px 10px 15px;
     margin-bottom: 40px;
-}
+    }
 
     .sectionfiltre h4
     {
@@ -1677,7 +1712,8 @@ footer
 	justify-content: space-between;
     }
 
-    .vieuxp, .calanques, .pom-fri {
+    .vieuxp, .calanques, .pom-fri
+    {
         margin: 14px;
     }
 
@@ -1685,9 +1721,9 @@ footer
     {
 	display: flex;
     width: 460px;
-	box-shadow: 8px 8px 12px #aaaaaa38;
+    box-shadow: 8px 8px 12px #aaaaaa38;
 	background-color: white;
-	border: 1px solid transparent;
+	border:1px transparent;
 	border-radius: 25px;
 	box-sizing: border-box;
     margin: 17px;
@@ -1697,15 +1733,16 @@ footer
     {
 	display: flex;
     width: 460px;
-	box-shadow: 8px 8px 12px #aaaaaa38;
+    box-shadow: 8px 8px 12px #aaaaaa38;
 	background-color: white;
-	border: 1px solid transparent;
+	border:1px transparent;
 	border-radius: 25px;
 	box-sizing: border-box;
     margin: 17px;
     }
 
-    #main-visit .dame img {
+    #main-visit .dame img
+    {
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         object-fit: cover;
@@ -1714,7 +1751,8 @@ footer
         margin: auto;
     }
 
-    #main-visit .longchamp img {
+    #main-visit .longchamp img
+    {
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         object-fit: cover;
@@ -1722,7 +1760,8 @@ footer
         margin: auto;
     }
     
-    #main-visit .dame img {
+    #main-visit .dame img
+    {
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         object-fit: cover;
