@@ -116,6 +116,7 @@ p
 {
     display: flex;
     margin-bottom: 16px;
+    margin-left: -10px;
 }
 
 ul
