@@ -659,6 +659,11 @@ width: 300px;
 margin: auto;
 }
 
+figure
+{
+    margin: 0;
+}
+
 .vieuxp img, .calanques img
 {
 height: 390px;
@@ -1089,7 +1094,7 @@ footer
        padding-bottom: 20px;
     }
 
-   #main-visit img
+    #main-visit img
     {
        object-fit: cover;
        width: 100%;
@@ -1685,7 +1690,15 @@ footer
 
 @media screen and (min-width: 1024px) and (max-width: 1439px)
 {
+    #trouver_herbergement {
+        margin-left: 15px;
+    }
 
+    .logo
+    {
+        margin-left: 10px;
+    }
+    
     .aside figcaption
     {
         width: auto;
