@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <!-- Metatags, links to Bootstrap and stylesheets -->
         <meta charset="utf-8" />
         <title>P2 bianciotto olivier</title>
         <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/65c05be77e.js" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+            </style>
     </head>
 
 <body>
-
-<div id="bloc_page">
 
 <!-- Header -->
 
@@ -31,81 +33,76 @@
                      <span><a href="#" class="nounderline">S'inscrire</a></span>
                  </div>
             </div>
-            </div> 
+            </div>
 
         </header>
-  
-<!---------------------------------------------------------------------------------------------------------->
+
+<!-- ############################################################################################################################ -->
 
 <!-- Section 1 -->
 
-<main class="main-container">
-
-        <section id="trouver_herbergement"></section>
+        <section id="trouver_herbergement">
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou en pleine nature</p>
 
-                <div id="searchbar">
-
-                    <div class="element1"><i class="fas fa-map-marker-alt"></i></div>
-
-                    <div class="element2">
-                    <form method="post" action="traitement.php">
-                        <input class="champ1" type="text" value="Marseille, France"/>
-                    </form>
+                <div id="search">
+                    <div id="search-bar">
+                        <span class="search-bar"><i class="fas fa-map-marker-alt"></i></span>
+                        <form method="get" action="search">
+                            <input type="search" placeholder="" value="Marseille, France">
+                        </form>
+                        <span class="button"> <button class="search-button" type="button"> Rechercher </button></span>
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </div>
                     </div>
 
-                    <div class="element2">
-                        <button class="styled" type="submit">
-                            <a href="#"class="bouton nounderline"><font color="white">Rechercher</font></a>
-                        </button>
-                    </div>
-        
-                </div> 
+<!-- ###################### -->
 
-                <div id="sectionfiltre">
-                    
-                        <div class="filtre">
-                                <p class="fil1"><h5 class="fil2">Filtres</h5></p>
-                        </div>
-                        <div class="filtre">
-                            <div id="moncercle"><i class="fas fa-money-bill-wave"></i></div>
-                                <p class="eco"><a href="#"class="nounderline">Economique</a></p>
-                        </div>
-                        <div class="filtre">
-                            <div id="moncercle"><i class="fas fa-child"></i></div>
-                                <p class="fam"><a href="#"class="nounderline">Familial</a></p>
-                        </div>
-                        <div class="filtre">
-                            <div id="moncercle"><i class="fas fa-heart"></i></div>
-                                <p class="rom"><a href="#"class="nounderline">Romantique</a></p>
-                        </div>
-                        <div class="filtre">
-                            <div id="moncercle"><i class="fas fa-dog"></i></div>
-                                <p class="ani"><a href="#"class="nounderline">Animaux autorisès</a></p>
-                        </div>
+<div class="sectionfiltre">
+    
+            <h4>Filtres</h4>
+       
 
+            <div id="sectionfiltre">
+                <div class="filtre">
+                    <div class="moncercle"><i class="fas fa-money-bill-wave"></i></div>
+                        <p><a href="#" class="nounderline">Economique</a></p>
                 </div>
-
-                <div id="information">
-                    <div class="info">
-                        <div id="contour"><i class="fas fa-info"></i></div>
-                            <p class="inf">Plus de 500 logements sont disponibles dans cette villes</p>
-                    </div>
+                <div class="filtre">
+                    <div class="moncercle"><i class="fas fa-child"></i></div>
+                        <p><a href="#" class="nounderline">Familial</a></p>
                 </div>
+                <div class="filtre">
+                    <div class="moncercle"><i class="fas fa-heart"></i></div>
+                        <p><a href="#" class="nounderline">Romantique</a></p>
+                </div>
+                <div class="filtre">
+                    <div class="moncercle"><i class="fas fa-dog"></i></div>
+                        <p><a href="#" class="nounderline">Animaux autorisès</a></p>
+                </div>
+            </div>
+
+</div>
+
+            <div id="information">
+                <div class="info">
+                    <div id="contour"><i class="fas fa-info"></i></div>
+                        <p class="inf">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
 
         </section>
-        
-<!----------------------------------------------------------------------------------------------------------> 
-   
-<!-- Section 2 -->   
 
-    <!-- Section herbergement marseille -->
+<!-- ############################################################################################################################ -->
 
+<!-- Section 2 -->
+    
+<main class="main-container">
+    
     <div id="container">
         <section id="rooms">
             <div class="rooms-title">
-                <h3> Hébergements à Marseille </h3>
+                <h3 id="hebergements">Hébergements à Marseille</h3>
             </div>
             <div id="main-rooms">
             <div class="rooms">
@@ -133,7 +130,7 @@
                 </a>
             </div>
             <div class="rooms">
-                <a href="#">  
+                <a href="#">
                     <figure class="mouettes">
                         <img src="img/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes">
                     <figcaption>
@@ -196,7 +193,7 @@
             <div id="aside">
             <div class="aside">
                 <a href="#">
-                    <figure class="matin">
+                    <figure class="pop">
                         <img src="img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin">
                     <figcaption>
                         <h4> Hôtel Le soleil du matin </h4>
@@ -208,7 +205,7 @@
             </div>
             <div class="aside">
                 <a href="#">
-                    <figure class="chambre">
+                    <figure class="pop">
                         <img src="img/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambres d'hotes au coeur de l'eau">
                     <figcaption>
                         <h4> Au coeur de l'eau Chambres d'hôtes </h4>
@@ -220,7 +217,7 @@
             </div>
             <div class="aside">
                 <a href="#">
-                    <figure class="bleublanc">
+                    <figure class="pop">
                         <img src="img/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel tout bleu et blanc">
                     <figcaption>
                         <h4> Hôtel Tout bleu et Blanc </h4>
@@ -234,111 +231,113 @@
         </aside>
         </div>
 
-<!---------------------------------------------------------------------------------------------------------->
+<!-- ############################################################################################################################ -->
 
 <!-- Section 3 -->
 
 <section id="activities">
-    <div class="activities">
-        <h3> Activités à Marseille </h3>
-    </div>
+                                <div class="activities"><h3 id="activites">Activités à Marseille</h3></div>
+
     <div id="main-visit">
-      <div class="vieuxp">
-        <a href="#">
-            <figure>
-                <img src="img/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
-            <figcaption>
-                <h3> Vieux Port </h3>
-            </figcaption>
-            </figure>
-        </a>
+                <div class="vieuxp">
+                            <a href="#">
+                                <figure>
+                                            <img src="img/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+                                        <figcaption>
+                                            <h3> Vieux Port </h3>
+                                        </figcaption>
+                                </figure>
+                            </a>
+                </div>
+                            
+            <div class="pom-fri">
+                <div class="pomegues">
+                            <a href="#">
+                                <figure>
+                                            <img src="img/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues">
+                                        <figcaption>
+                                            <h3> Fort de Pomègues </h3>
+                                        </figcaption>
+                                </figure>
+                            </a>    
+                </div>
+                <div class="frioul">
+                            <a href="#">
+                                <figure>
+                                            <img src="img/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul">
+                                        <figcaption>
+                                            <h3> Îles du Frioul </h3>
+                                        </figcaption>
+                                </figure>
+                            </a>
+                </div>
+            </div>
+                 <div class="calanques">
+                            <a href="#">
+                                 <figure>
+                                            <img src="img/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
+                                        <figcaption>
+                                            <h3> Parc National des Calanques </h3>
+                                        </figcaption>
+                                 </figure>
+                            </a>
+                </div>
+            <div class="dame-long">
+                <div class="dame">
+                            <a href="#">
+                                <figure>
+                                            <img src="img/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
+                                        <figcaption>
+                                            <h3> Notre-Dame-de-la-Garde </h3>
+                                        </figcaption>
+                                </figure>
+                            </a>
+                </div>
+                <div class="longchamp">
+                            <a href="#">
+                                <figure>
+                                            <img src="img/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamp">
+                                        <figcaption>
+                                            <h3> Parc Longchamp </h3>
+                                        </figcaption>
+                                </figure>
+                            </a>
+                </div>
+            </div>
     </div>
-    <div class="pom-fri">
-    <div class="pomegues">
-        <a href="#">
-            <figure>
-                <img src="img/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues">
-            <figcaption>
-                <h3> Fort de Pomègues </h3>
-            </figcaption>
-            </figure>
-        </a>
-    </div>
-    <div class="frioul">
-        <a href="#">
-            <figure>
-                <img src="img/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul">
-            <figcaption>
-                <h3> Îles du Frioul </h3>
-            </figcaption>
-            </figure>
-        </a>
-    </div>
-    </div>
-    <div class="calanques">
-        <a href="#">
-            <figure>
-                <img src="img/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
-            <figcaption>
-                <h3> Parc National des Calanques </h3>
-            </figcaption>
-            </figure>
-        </a>
-    </div>
-    <div class="dame-long">
-    <div class="dame">
-        <a href="#">
-            <figure>
-                <img src="img/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
-            <figcaption>
-                <h3> Notre-Dame-de-la-Garde </h3>
-            </figcaption>
-            </figure>
-        </a>
-    </div>
-    <div class="longchamp">
-        <a href="#">
-            <figure>
-                <img src="img/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamp">
-            <figcaption>
-                <h3> Parc Longchamp </h3>
-             </figcaption>
-            </figure>
-        </a>
-    </div>
-    </div>
-    </div>
+
+
 </section>
 </main>
-</div>
-<!---------------------------------------------------------------------------------------------------------->
 
-<!-- Footer -->	
+<!-- ############################################################################################################################ -->
+
+<!-- Footer -->
 
 <footer>
-    <div id="footer">
-        <div class="bloc_footer">
-    <div class="footer">
-        <h4> A propos </h4>
-        <a href="#"> Fonctionnement du site </a>
-        <a href="#"> Conditions générales de vente </a>
-        <a href="#"> Données et confidentialité </a>
-    </div>
-    <div class="footer">
-        <h4> Nos hébergements </h4>
-        <a href="#"> Charte qualité </a>
-        <a href="#"> Soumettre votre hôtel </a>
-    </div>
-    <div class="footer">
-        <h4> Assistance </h4>
-        <a href="#"> Centre d'aide </a>
-        <a href="#"> Nous contacter </a>
-    </div>
+
+    <div class="bloc_footer">
+        <div class="footer">
+            <h4> A propos </h4>
+            <a href="#"> Fonctionnement du site </a>
+            <a href="#"> Conditions générales de vente </a>
+            <a href="#"> Données et confidentialité </a>
+        </div>
+        <div class="footer">
+            <h4> Nos hébergements </h4>
+            <a href="#"> Charte qualité </a>
+            <a href="#"> Soumettre votre hôtel </a>
+        </div>
+        <div class="footer">
+            <h4> Assistance </h4>
+            <a href="#"> Centre d'aide </a>
+            <a href="#"> Nous contacter </a>
         </div>
     </div>
-</footer>     
 
-<!---------------------------------------------------------------------------------------------------------->
+</footer>
+
+<!-- ############################################################################################################################ -->
 
 </body>
 
